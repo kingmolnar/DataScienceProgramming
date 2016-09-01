@@ -1,8 +1,8 @@
 # Session 2
 ## Python in a Nutshell, functions, classes, data types
-Date: 2016-09-01 00:00:00
-In class: Lecture, Hands-on
-Due before class: Lecture, Hands-on
+- Date: 2016-09-01 00:00:00
+- In class: Lecture, Hands-on
+- Due before class: Lecture, Hands-on
 ### Description
 Revisit Python concepts: classes, objects, iterators, generators etc.
 ### Reading
