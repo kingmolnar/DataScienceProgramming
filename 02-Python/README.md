@@ -14,3 +14,5 @@ Revisit Python concepts: classes, objects, iterators, generators etc.
 ### Assignment Homework 1
 Can we identify different types of text documents based on the frequency of their words? Can we identify different authors, styles, or disciplines like medical versus information technology? 
  The assignment is to compute word frequencies for different types of documents, and to develop patterns for document classification.
+
+
