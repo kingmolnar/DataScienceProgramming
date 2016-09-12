@@ -23,4 +23,6 @@ The file is already stored at `/home/data/APD/COBRA083016.xlsx`
 
 
 ### Assignment Homework 2
-TBA
+Please, complete the `PandasExercise` notebook and save it on the cluster int your
+  ~/MSA8010F16/HW2/HW2.ipynb
+  
