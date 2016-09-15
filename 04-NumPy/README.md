@@ -7,7 +7,7 @@
 ### Description
 We ill explore some of the NumPy functionality as it relates to Pandas DataFrames and introduce Matplotlib to create visual representations.
 
-We're going to work on the notebook `ADP-Crime-Data_orig.ipynb`. Please, rename to `ADP-Crime-Data.ipynb`
+We're going to work on the notebook `APD-Crime-Data_orig.ipynb`. Please, rename to `APD-Crime-Data.ipynb`
 before you start working on it.
 
 ### Homework HW3
