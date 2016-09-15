@@ -13,4 +13,6 @@ Pandas is one of the key libraries for data analytics. It builds on NumPy and Ma
 1. http://it-ebooks.info/book/6202/
 
 ### Assignment Homework 2
-TBA
+Please, complete the `PandasExercise` notebook and save it on the cluster int your
+  ~/MSA8010F16/HW2/HW2.ipynb
+  
