@@ -4,7 +4,6 @@ This class is developed for MSA8010 and CIS 8005.
 
 ## Topics and Schedule
 
-
 |		|	Date	|	Topic	|	Reading	|	In class	|	Due	|
 |---|-------|-------|---------|-----------|-----|
 |	1	|	August 25, 2016	|	Tools, UNIX command line, file system, Python repl, Jupyter notebook etc.	|	[Unix Tutorial](http://www.tutorialspoint.com/unix/unix_tutorial.pdf)	|	Introduction, Hands-on	|		|
