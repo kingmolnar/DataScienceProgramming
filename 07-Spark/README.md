@@ -1,11 +1,13 @@
-# Session 6
+# Session 7
 ## Spark, Spark SQL
-- Date: 2016-09-29 00:00:00
-- In class: Lecture, Hands-on, Quiz 4
-- Due before class: Lecture, Hands-on, Quiz 4
+- Date: 2016-10-06
+- In class: Lecture
+- Due before class: N/A
 
 ### Description
-nan
+Introduction to Spark. See notebook in this folder for examples.
 
 ### Reading
-1. (online)
+1. [Spark Programming Guide](http://spark.apache.org/docs/1.6.1/programming-guide.html)
+2. [Spark SQL Programming Guide](http://spark.apache.org/docs/1.6.1/sql-programming-guide.html)
+
