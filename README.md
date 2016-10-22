@@ -14,9 +14,9 @@ This class is developed for MSA8010 and CIS 8005.
 |	6	|	September 29, 2016	|	Python Summary	|	(online)	|	Lecture, Hands-on, Quiz 4	|	Homework 4	|
 |	7	|	October 6, 2016	    |	Spark, Spark SQ	|	(online)	|	Lecture	|		|
 |	8	|	October 13, 2016	|	Machine Learning I	|	ML chapter 2, and 8	|	Lecture, Hands-on, Quiz 5	| 	|
-|	9	|	October 20, 2016	|	Machine Learning II	|	ML chapter 3      	|	Lecture, Hands-on, Quiz 6	|	Homework 5	|
-|	10	|	October 27, 2016	|	ML Information Based	|	ML chapter 4	|	Lecture, Hands-on, Quiz 7	|	Homework 6	|
-|	11	|	November 3, 2016	|	ML Probability Based	|	ML chapter 5	|	Lecture, Hands-on, Quiz 8	| 	|
+|	9	|	October 20, 2016	|	Machine Learning II	|	ML chapter 3      	|	Lecture, Hands-on, Quiz 6	|		|
+|	10	|	October 27, 2016	|	ML Information Based	|	ML chapter 4	|	Lecture, Hands-on, Quiz 7	|	Homework 5	|
+|	11	|	November 3, 2016	|	ML Probability Based	|	ML chapter 5	|	Lecture, Hands-on, Quiz 8	| 	Homework 6|
 |	12	|	November 10, 2016	|	ML Similarity Based	    |	ML chapter 6	|	Lecture, Hands-on, Quiz 9	|	|
 |	13	|	November 17, 2016	|	ML Error Based	        |	ML chapter 7	|	Lecture, Hands-on, Quiz 10	|	|
 |		|	November 24, 2016	|	(Thanks Giving Break)	|                	|		|		|
