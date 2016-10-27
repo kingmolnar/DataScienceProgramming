@@ -9,4 +9,6 @@ This session covers how concepts from information theory can be used to build pr
 ### Reading
 1. Chapter 4 of [Fundamentals of Machine Learning for Predictive Data Analytics](https://mitpress.mit.edu/books/fundamentals-machine-learning-predictive-data-analytics)
 3. [Chapter 4 Slides 'A'](http://131.96.197.204/~pmolnar/mlbook/BookSlides_4A_Information-based_Learning.pdf) (internal)
-3. [Chapter 4 Slides 'B'](http://131.96.197.204/~pmolnar/mlbook/BookSlides_4B_Information-based_Learning.pdf) (internal)
+3. [Chapter 4 Slides 'B'](http://131.96.197.204/~pmolnar/mlbook/BookSlides_4B_Information_Based_Learning.pdf) (internal)
+
+Slides are posted on the internal server http://131.96.197.204/~pmolnar/mlbook
