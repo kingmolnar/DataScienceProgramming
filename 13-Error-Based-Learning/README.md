@@ -1,5 +1,5 @@
 # Session 13
-## ML Probability Based Learning
+## ML Error Based Learning
 - Date: 2016-11-17 
 - In class: Lecture, Hands-on, 
 
