@@ -1,4 +1,4 @@
-# Session 11
+# Session 12
 ## ML Probability Based Learning
 - Date: 2016-11-10 
 - In class: Lecture, Hands-on, 
