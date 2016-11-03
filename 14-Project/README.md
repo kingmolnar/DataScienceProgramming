@@ -1,10 +1,13 @@
 # Session 14
 ## Project
+
 - Date: 2016-12-01
 - In class: Presentations on Chritie Wall
 - Due before class: 
 
+
 ### Description
+
 - The project should showcase some of the methods and tools are introduced in this course.
 - Teams can comprise up to five students.
 - Teams are free to choose a data set for their project.
@@ -14,6 +17,7 @@
 
 ### Electronic Poster
 Each team should create an electronic poster with four pages (slides)
+
 1. Problem statement, description of data that are used for this project, representation of source, data quality, and references.
 2. Methodology, details of the machine learning algorithms that are used.
 3. Results.
