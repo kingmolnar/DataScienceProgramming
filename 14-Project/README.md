@@ -19,6 +19,9 @@ Each team should create an electronic poster with four pages (slides)
 3. Results.
 4. More results, and conclusion.
 
+### Report
+Create a document that explains the make-up of your program code and how to run it on the ARC cluster.
+
 Download a PowerPoint template and examples from http://131.96.197.204/~pmolnar/christiewall/
 
 
@@ -31,10 +34,16 @@ Download a PowerPoint template and examples from http://131.96.197.204/~pmolnar/
 2. Poster
     1. Aesthetics (10%)
     2. Completeness (10%)
-    3. Data Visualization (15%)
+    3. Data Visualization (10%)
+
+3. Code and Report
+    1. Completeness of writeup on program description and instructions (10%)
+    2. Organization of source code (10%)
 
 3. Project
-    1. Difficulty of data problem (5%)
-    2. Algorithms (10%)
-    3. Implementation (10%)
-    4. Iterative Improvement (20%)
+    1. Difficulty of data problem (10%)
+    2. Algorithms (5%)
+    3. Implementation (5%)
+    4. Iterative Improvement (10%)
+    
+
