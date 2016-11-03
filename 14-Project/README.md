@@ -20,3 +20,21 @@ Each team should create an electronic poster with four pages (slides)
 4. More results, and conclusion.
 
 Download a PowerPoint template and examples from http://131.96.197.204/~pmolnar/christiewall/
+
+
+### Evaluation Criteria
+
+1. Presentation
+    a. Explain relevance, Business value (10%)
+    b. Conclusion (10%)
+
+2. Poster
+    a. Aesthetics (10%)
+    b. Completeness (10%)
+    c. Data Visualization (15%)
+
+3. Project
+    a. Difficulty of data problem (5%)
+    b. Algorithms (10%)
+    c. Implementation (10%)
+    d. Iterative Improvement (20%)
