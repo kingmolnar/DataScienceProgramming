@@ -17,8 +17,8 @@ This class is developed for MSA8010 and CIS 8005.
 |	9	|	October 20, 2016	|	Machine Learning II	|	ML chapter 3      	|	Lecture, Hands-on, Quiz 6	|		|
 |	10	|	October 27, 2016	|	ML Information Based	|	ML chapter 4	|	Lecture, Hands-on	|	Homework 5	|
 |	11	|	November 3, 2016	|	ML Similarity Based	|	ML chapter 5	|	Lecture, Hands-on	| 	Homework 6|
-|	12	|	November 10, 2016	|	ML Probability Based	    |	ML chapter 6	|	Lecture, Hands-on	|	|
-|	13	|	November 17, 2016	|	ML Error Based	        |	ML chapter 7	|	Lecture, Hands-on	|	|
+|	12	|	November 10, 2016	|	ML Probability Based, Error Based	    |	ML chapter 6, 7	|	Lecture, Hands-on	|	|
+    |	13	|	November 17, 2016	|	5 minute presentation     |	 	|	Presentations	|	|
 |		|	November 24, 2016	|	(Thanks Giving Break)	|                	|		|		|
 |	14	|	December 1, 2016	|	Project Presentations	|                   |	Presentations	| Digital Poster |
 |		|	December 8, 2016	|	 	|                   |		| Project Report |
