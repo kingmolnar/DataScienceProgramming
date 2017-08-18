@@ -1,27 +1,27 @@
-# DataScienceProgramming
+# Data Science Programming
 
-This class is developed for MSA8010 and CIS 8005.
+This material has been developed for the course MSA8010 in the [Master of Science in Analytics](http://robinson.gsu.edu/masters-programs/ms-in-analytics/) at the [J. Mack Robinson College of Business](http://robinson.gsu.edu) at [Georgia State University](http://gsu.edu).
 
 ## Topics and Schedule
+The schedule below applies to all sections for Fall 2017. Please, refer to this page for any changes.
 
-|		|	Date	|	Topic	|	Reading	|	In class	|	Due	|
-|---|-------|-------|---------|-----------|-----|
-|	1	|	August 25, 2016	|	Tools, UNIX command line, file system, Python repl, Jupyter notebook etc.	|	[Unix Tutorial](http://www.tutorialspoint.com/unix/unix_tutorial.pdf)	|	Introduction, Hands-on	|		|
-|	2	|	September 1, 2016	|	Python in a Nutshell, functions, classes, data types	|	(online)	|	Lecture, Hands-on	|		|
-|	3	|	September 8, 2016	|	pandas, Plotting	|	(online)	|	Lecture, Hands-on, Quiz 1	|	Homework 1	|
-|	4	|	September 15, 2016	|	numpy, BLAS	|	(online)	|	Lecture, Hands-on, Quiz 2	|	Homework 2	|
-|	5	|	September 22, 2016	|	DataFrames Pandas: group, join	|	(online)	|	Lecture, Hands-on, Quiz 3	|	Homework 3	|
-|	6	|	September 29, 2016	|	Python Summary	|	(online)	|	Lecture, Hands-on, Quiz 4	|	Homework 4	|
-|	7	|	October 6, 2016	    |	Spark, Spark SQ	|	(online)	|	Lecture	|		|
-|	8	|	October 13, 2016	|	Machine Learning I	|	ML chapter 2, and 8	|	Lecture, Hands-on, Quiz 5	| 	|
-|	9	|	October 20, 2016	|	Machine Learning II	|	ML chapter 3      	|	Lecture, Hands-on, Quiz 6	|		|
-|	10	|	October 27, 2016	|	ML Information Based	|	ML chapter 4	|	Lecture, Hands-on	|	Homework 5	|
-|	11	|	November 3, 2016	|	ML Similarity Based	|	ML chapter 5	|	Lecture, Hands-on	| 	Homework 6|
-|	12	|	November 10, 2016	|	ML Probability Based, Error Based	    |	ML chapter 6, 7	|	Lecture, Hands-on	|	|
-|	13	|	November 17, 2016	|	5 minute presentation     |	 	|	Presentations	|	|
-|		|	November 24, 2016	|	(Thanks Giving Break)	|                	|		|		|
-|	14	|	December 1, 2016	|	Project Presentations	|                   |	Presentations	| Digital Poster |
-|		|	December 8, 2016	|	 	|                   |		| Project Report |
+| # | Track I |  Track II  |  Topic |  Reading |
+|--|---------|------------|--------|----------|
+|1 | Mon, August 21 | We, August 23 | UNIX file system, command line tools, Jupyter notebook | (online) |
+|2 | Mon, August 28 | We, August 30 | Python programming language, Review | (online) |
+|3 | Mon, Sept 11 | We, Sept 6 | Numpy and linear algebra operations | (online) |
+|4 | Mon, Sept 18 | We, Sept 13 | Pandas data frames, loading data, data-table manipulation | (online) |
+|5 | Mon, Sept 25 | We, Sept 20 | Operating with multiple tables, joining and reshaping | (online) |
+|6 | Mon, Oct 2 | We, Sept 27 | Descriptive statistics with Pandas data tables | (online) |
+|7 | Mon, Oct 9 | We, Oct 4 | Data visualization | (online) |
+|8 | Mon, Oct 16 | We, Oct 11 | Machine Learning I | ML Chapter 2, 8 |
+|9 | Mon, Oct 23 | We, Oct 18 | Machine Learning II | ML Chapter 3 |
+|10 | Mon, Oct 30 | We, Oct 25 | Information Based Learning | ML Chapter 4 |
+|11 | Mon, Nov 6 | We, Nov 1 | Similarity Based Learning | ML Chapter 5 |
+|12 | Mon, Nov 13 | We, Nov 8 | Probability Based Learning | ML Chapter 6 |
+|13 | Mon, Nov 27 | We, Nov 15 | Error Based Learning | ML Chapter 7 |
+|14 | Mon, Dec 4 | We, Nov 29 | Presentations |
+| | TBA | TBA | Final Exam |
 
 ## Text Book
 
