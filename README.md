@@ -26,8 +26,11 @@ The schedule below applies to all sections for Fall 2017. Please, refer to this 
 ## Text Book
 
 <img src="http://machinelearningbook.com/wp-content/uploads/2015/07/FMLPDA_BookCover.jpg" alt="Book Cover" style="width: 300px; float: left; margin-right: 20px;"/>
-**Fundamentals of Machine Learning for Predictive Data Analytics** <br />
-by John D. Kelleher, Brian Mac Namee, and Aoife D’Arcy<br />
-[MIT-Press](https://mitpress.mit.edu/books/fundamentals-machine-learning-predictive-data-analytics)<br />
-Hardcover: ISBN 9780262029445, 624 pp., July 2015<br />
-eBook:  ISBN 9780262331722, 624 pp., July 2015
+
+**Fundamentals of Machine Learning for Predictive Data Analytics**
+
+by John D. Kelleher, Brian Mac Namee, and Aoife D’Arcy
+[MIT-Press](https://mitpress.mit.edu/books/fundamentals-machine-learning-predictive-data-analytics)
+
+- Hardcover: ISBN 9780262029445, 624 pp., July 2015
+- eBook:  ISBN 9780262331722, 624 pp., July 2015
