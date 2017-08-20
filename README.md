@@ -7,7 +7,7 @@ The schedule below applies to all sections for Fall 2017. Please, refer to this 
 
 | # | Track I |  Track II  |  Topic |  Reading |
 |--|---------|------------|--------|----------|
-|1 | Mon, August 21 | We, August 23 | UNIX file system, command line tools, Jupyter notebook | (online) |
+|1 | Mon, August 21 | We, August 23 | UNIX file system, command line tools, Jupyter notebook | [(online)](https://github.com/kingmolnar/DataScienceProgramming/blob/master/01-Intro-UNIX/Introduction_orig.ipynb) |
 |2 | Mon, August 28 | We, August 30 | Python programming language, Review | (online) |
 |3 | Mon, Sept 11 | We, Sept 6 | Numpy and linear algebra operations | (online) |
 |4 | Mon, Sept 18 | We, Sept 13 | Pandas data frames, loading data, data-table manipulation | (online) |
