@@ -51,7 +51,7 @@ If you save the script as "myscript2.sh" and run "./myscript2.sh John Jones 26",
 Write a script called "question6.sh" that takes a file name and a text string as its first and second arguments, respectively, and counts the number of unique occurrences of the text string in the given file. Make sure that you are counting occurrences of the word, and not just matching lines! Case should not matter, and match whole words only (so if I call "question6.sh [filename] hat", I should get counts of the word "hat" and not of longer words that contain "hat" as a substring--for example, "that").  
 
 
-## Submission
+## Submission due Friday September 1, 2017 at 12-noon
 1. Save your scripts in this directory (where this README.md file resides)
 2. Make sure that your script files are named exactly as indicated in the instructions. UNIX is case sensitive!!! (unlike MS Windows) Never, ever use spaces (blanks) in filenames!!!
 3. Make your script files executable using the "chmod" command
