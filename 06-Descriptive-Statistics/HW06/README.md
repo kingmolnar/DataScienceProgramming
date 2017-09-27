@@ -1,5 +1,3 @@
 # Assignment HW06
-## Instructions
-**Please following the instructions precisely!**
 
-## Submission
+<p style="color:red; font-weight:bold; font-size:20pt;">No Assignment for this Week!</p>
