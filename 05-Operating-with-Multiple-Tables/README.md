@@ -17,4 +17,5 @@ Merge, join, and concatenate http://pandas.pydata.org/pandas-docs/version/0.18.1
 Reshaping and Pivot Tables http://pandas.pydata.org/pandas-docs/version/0.18.1/reshaping.html
 
 
-## Assignment 5:  <a src="HW05">HW05</a>
+## Assignment 5: HW05
+Got to folder <a src="HW05">HW05</a>
