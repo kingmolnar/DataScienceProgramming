@@ -3,7 +3,7 @@
 **Please following the instructions precisely!**
 
 
-Create a file `hw5_answers.py` in this folder. You may use the file `hw4_template.py` as a template.
+Create a file `hw5_answers.py` in this folder. You may use the file `hw5_template.py` as a template.
 
 You can use the notebook `CheckHomework05.ipynb` to test your solution. (Note: the notebook will **not** be graded.)
 For this assignment, you will be working with the AdventureWorks dataset that we studied in class. You don't need to copy the dataset into your home directory, you can import it directly from files in the /home/data/AdventureWorks/ directory. 
