@@ -6,9 +6,9 @@ This session covers how concepts from information theory can be used to build pr
 
 
 1. Chapter 4 of [Fundamentals of Machine Learning for Predictive Data Analytics](https://mitpress.mit.edu/books/fundamentals-machine-learning-predictive-data-analytics)
-3. [Chapter 4 Slides 'A'](http://131.96.197.204/~pmolnar/mlbook/BookSlides_4A_Information-based_Learning.pdf) (internal)
+2. [Chapter 4 Slides 'A'](http://131.96.197.204/~pmolnar/mlbook/BookSlides_4A_Information-based_Learning.pdf) (internal)
 3. [Chapter 4 Slides 'B'](http://131.96.197.204/~pmolnar/mlbook/BookSlides_4B_Information_Based_Learning.pdf) (internal)
-
-4. Scikit-Learn documentation  [Decision Trees](http://scikit-learn.org/stable/modules/tree.html)
+4. [An introduction to machine learning with scikit-learn](http://scikit-learn.org/stable/tutorial/basic/tutorial.html)
+5. [scikit-learn Decision Trees](http://scikit-learn.org/stable/modules/tree.html)
 
 Slides are posted on http://iCollege.gsu.edu
