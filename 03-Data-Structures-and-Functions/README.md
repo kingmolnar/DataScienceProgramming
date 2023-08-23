@@ -6,13 +6,12 @@ The second part of this module delves into the core elements of Python programmi
 ## ML Reading
 Chapter 1: Machine Learning for Predictive Data Analytics 
 
-1.1 What Is Predictive Data Analytics? 
-1.2 What Is Machine Learning? 
-1.3 How Does Machine Learning Work? 
-1.4 Inductive Bias Versus Sample Bias 
-1.5 What Can Go Wrong with Machine Learning?
-1.6 The Predictive Data Analytics Project Lifecycle: CRISP-DM
-1.7 Predictive Data Analytics Tools 
+1. What Is Predictive Data Analytics? 
+2. What Is Machine Learning? 
+3. How Does Machine Learning Work? 
+4. Inductive Bias Versus Sample Bias 
+5. What Can Go Wrong with Machine Learning?
+7. Predictive Data Analytics Tools 
 
 
 # Python Reading:
