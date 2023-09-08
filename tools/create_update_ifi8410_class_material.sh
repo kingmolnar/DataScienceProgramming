@@ -3,7 +3,7 @@ CLASS_DIR=IFI8410F23
 GIT_REPO=https://github.com/kingmolnar/DataScienceProgramming.git
 GIT_DIR=DataScienceProgramming
 
-cat ifi8410_users.log | while read U S D
+cat private/ifi8410_users.log | while read U S D
 do
         echo $U
         HOME_DIR=/home/$U
