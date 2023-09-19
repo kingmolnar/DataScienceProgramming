@@ -14,9 +14,9 @@ do
                 echo "Clone GIT repo"
         else
                 echo "Pull GIT repo"
-                su - $U -c "cd $HOME_DIR/$CLASS_DIR/$GIT_DIR ; git config pull.rebase false"
-                ##su - $U -c "cd $HOME_DIR/$CLASS_DIR/$GIT_DIR ; git stash; git pull"
-                su - $U -c "cd $HOME_DIR/$CLASS_DIR/$GIT_DIR ; git pull"
+                ## su - $U -c "cd $HOME_DIR/$CLASS_DIR/$GIT_DIR ; git config pull.rebase false"
+                su - $U -c "cd $HOME_DIR/$CLASS_DIR/$GIT_DIR ; git stash; git pull; git stash pop"
+                ## su - $U -c "cd $HOME_DIR/$CLASS_DIR/$GIT_DIR ; git pull"
         fi
 done
 echo "Done."
