@@ -3,8 +3,9 @@
 You will conduct a data exploration project in which you'll analyze a structured dataset of your choice. The goal is to prepare a comprehensive report that explores various aspects of the data, including data types, distribution of values, missing values, outliers, correlations, and more. Additionally, you will create a PowerPoint presentation to communicate your findings effectively.
 
 ## Deliverables
-- Code that generates all artifacts: data tables (CSV, Excel) and figures (PNG).
-- PowerPoint presentation for (~5 min class presentation)
+- Code that generates all artifacts: data tables (CSV, Excel) and figures (PNG)
+- Notebook with exploration report (limit code in notebook to calling functions from your Python packages)
+- PowerPoint presentation for (~5 min class presentation, see template PPTX file [DataExploration_example.pptx](DataExploration_example.pptx))
 
 
 ## Project Guidelines
