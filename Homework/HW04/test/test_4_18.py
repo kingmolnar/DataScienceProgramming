@@ -12,4 +12,4 @@ sales_data = np.array([
 def test_4_18():
     best_month, best_month_revenue = find_best_month(sales_data)
     assert best_month == 'May', "The best month found is incorrect"
-    assert str(best_month_revenue) == '58000', "The best month revenue found is incorrect"
+    assert str(best_month_revenue) == '87100', "The best month revenue found is incorrect"
