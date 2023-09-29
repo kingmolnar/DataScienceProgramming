@@ -14,6 +14,12 @@ cat << 'EOF'
 ██║  ██║╚██████╔╝██║ ╚═╝ ██║███████╗╚███╔███╔╝╚██████╔╝██║  ██║██║  ██╗███████║
 ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝ ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
 EOF
+if [ $UID != 0 ]
+then
+    echo
+    echo "Run this command with 'sudo' or  as root"
+    exit
+fi
 
 MAIN_DIR="`dirname $0`/.."
 CLASS_DIR=IFI8410F23
