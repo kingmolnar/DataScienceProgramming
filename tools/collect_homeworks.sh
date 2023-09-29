@@ -19,30 +19,25 @@ MAIN_DIR="`dirname $0`/.."
 CLASS_DIR=IFI8410F23
 GIT_REPO=https://github.com/kingmolnar/DataScienceProgramming.git
 GIT_DIR=DataScienceProgramming
-ASSIGNMENT="01-Intro-UNIX/HW01"
 BACKUP_DIR=$MAIN_DIR/private/backup
 
-HOMEWORK=`basename $ASSIGNMENT`
 
-
+TS=`date +"%Y%m%d_%H%M"`
 
 cat $MAIN_DIR/private/ifi8410_users.log | while read U S D
 do
         echo $U
         HOME_DIR=/home/$U
-        mkdir -p $BACKUP_DIR/$HOMEWORK/$U 
-        if [ -d $HOME_DIR/$CLASS_DIR/$GIT_DIR/$ASSIGNMENT ]
+        mkdir -p $BACKUP_DIR/$HOMEWORK/$U/$TS 
+        if [ -d "$HOME_DIR/$CLASS_DIR/$GIT_DIR" ]
         then
-            printf "$ASSIGNMENT\t$U\SUBMISSION START\n"
-            cp -av $HOME_DIR/$CLASS_DIR/$GIT_DIR/$ASSIGNMENT $BACKUP_DIR/$HOMEWORK/$U/ | awk "{print \"$ASSIGNMENT\t$U\t\", \$0}"
-            date > $BACKUP_DIR/$HOMEWORK/$U/SUBMISSION
-            printf "$ASSIGNMENT\t$U\SUBMISSION END\n\n"
-            #printf "$ASSIGNMENT\t$U\tTEST START\n"
-            #su - $U -c "cd $HOME_DIR/$CLASS_DIR/$GIT_DIR/$ASSIGNMENT; pytest" 2>&1 | awk "{print \"$ASSIGNMENT\t$U\t\", \$0}"
-            #printf "$ASSIGNMENT\t$U\tTEST END\n\n"
+            printf "$TS\t$U\SUBMISSION START\n"
+            cp -av $HOME_DIR/$CLASS_DIR/$GIT_DIR $BACKUP_DIR/$U/$TS | awk "{print \"$TS\t$U\t\", \$0}"
+            date > $BACKUP_DIR/$U/SUBMISSION
+            printf "$TS\t$U\SUBMISSION END\n\n"
         else
-            date > $BACKUP_DIR/$HOMEWORK/$U/NO_SUBMISSION
-            printf "$HOME_DIR/$CLASS_DIR/$GIT_DIR/$ASSIGNMENT\t$U\tNO SUBMISSION\n\n"
+            date > $BACKUP_DIR/$U/$TS/NO_SUBMISSION
+            printf "$HOME_DIR/$CLASS_DIR/$GIT_DIR/$TS\t$U\tNO SUBMISSION\n\n"
         fi
 done
 
