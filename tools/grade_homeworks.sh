@@ -9,7 +9,7 @@ cat <<'EOF'
                                                                              
 EOF
 ASSIGNMENT=$1
-if [ -z "$HW"]
+if [ -z "$ASSIGNMENT"]
 then
     echo "Usage: `basename $0` HWnn"
     echo "        with nn in [01, 02, ..., 08]"
