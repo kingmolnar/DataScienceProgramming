@@ -21,6 +21,7 @@ CLASS_DIR=IFI8410F23
 GIT_REPO=https://github.com/kingmolnar/DataScienceProgramming.git
 GIT_DIR=DataScienceProgramming
 
+declare -A TEST_DIR
 TEST_DIR["HW01"]="${MAIN_DIR}/01-Intro-UNIX/HW01/test"
 TEST_DIR["HW02"]="${MAIN_DIR}/Homework/HW02/test"
 TEST_DIR["HW03"]="${MAIN_DIR}/Homework/HW03/test"
