@@ -47,7 +47,7 @@ do
             printf "${ASSIGNMENT}\t$U\tTEST START\n"
             bash -c "cd ${HOME_DIR}/${ASSIGNMENT}; python3 -m pytest ${T_DIR}" 2>&1 \
                 | awk "{print \"$ASSIGNMENT\t$U\t\", \$0}" \
-                | tee "${LOG_DIR}/grades_${ASSIGNMENT}_${DSTAMP}.log"
+                | tee -ai "${LOG_DIR}/grades_${ASSIGNMENT}_${DSTAMP}.log"
             printf "${ASSIGNMENT}\t$U\tTEST END\n\n"
         else
             printf "$ASSIGNMENT\t$U\tNO ASSIGNMENT\n\n"
