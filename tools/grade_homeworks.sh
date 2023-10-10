@@ -33,6 +33,7 @@ LOG_DIR="${MAIN_DIR}/log"
 DSTAMP=`date +"%Y%m%d_%H%M%S"`
 
 T_DIR=`realpath ${TEST_DIR[$ASSIGNMENT]}`
+PYTEST_OPTS="--setup-timeout 10 --execution-timeout 120 --teardown-timeout 10"
 
 echo "--------------------------------------------------------------------------------"
 echo "Test: ${T_DIR}"
@@ -45,7 +46,7 @@ do
         if [ -d ${HOME_DIR}/${ASSIGNMENT} ]
         then
             printf "${ASSIGNMENT}\t$U\tTEST START\n"
-            bash -c "cd ${HOME_DIR}/${ASSIGNMENT}; python3 -m pytest ${T_DIR}" 2>&1 \
+            bash -c "cd ${HOME_DIR}/${ASSIGNMENT}; python3 -m pytest ${PYTEST_OPTS} ${T_DIR}" 2>&1 \
                 | awk "{print \"$ASSIGNMENT\t$U\t\", \$0}" \
                 | tee -ai "${LOG_DIR}/grades_${ASSIGNMENT}_${DSTAMP}.log"
             printf "${ASSIGNMENT}\t$U\tTEST END\n\n"
