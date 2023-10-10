@@ -30,7 +30,7 @@ TEST_DIR["HW05"]="${MAIN_DIR}/Homework/HW05/test"
 
 BACKUP_DIR="${MAIN_DIR}/private/backup"
 
-T_DIR=${TEST_DIR[$ASSIGNMENT]}
+T_DIR=`realpath ${TEST_DIR[$ASSIGNMENT]}`
 
 echo "--------------------------------------------------------------------------------"
 echo "Test: ${T_DIR}"
