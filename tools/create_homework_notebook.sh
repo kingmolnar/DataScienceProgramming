@@ -84,7 +84,7 @@ do
   {
    "cell_type": "code",
    "execution_count": null,
-   "metadata": {"hw_cell_type": "trying", "action": "keep"},
+   "metadata": {},
    "outputs": [],
    "source": [
       "# Try your code"
@@ -96,7 +96,7 @@ do
   {
    "cell_type": "markdown",
    "execution_count": null,
-   "metadata": {"hw_cell_type": "test_header", "action": "delete"},
+   "metadata": {},
    "outputs": [],
    "source": [
     "#### Test ${NUMBER}.${N} "
@@ -105,7 +105,7 @@ do
   {
    "cell_type": "code",
    "execution_count": null,
-   "metadata": {"hw_cell_type": "test_file", "action": "delete"},
+   "metadata": {},
    "outputs": [
     {
      "name": "stdout",
