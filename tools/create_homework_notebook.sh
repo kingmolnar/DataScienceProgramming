@@ -87,7 +87,7 @@ do
    "metadata": {},
    "outputs": [],
    "source": [
-      "# Try your code"
+      "# Try your code\n",
       "from solution_${NUMBER}_${N} import *\n",
       "\n",
       "\n"
