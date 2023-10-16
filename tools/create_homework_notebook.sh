@@ -143,7 +143,7 @@ cat <<EOF
    "outputs": [],
    "source": [
     "%%sh\n",
-    "pytest"
+    "python3 -m pytest"
    ]
   },
   {
