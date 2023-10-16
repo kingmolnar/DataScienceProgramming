@@ -82,9 +82,21 @@ do
    ]
   },
   {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {"hw_cell_type": "trying", "action": "keep"},
+   "outputs": [],
+   "source": [
+      "# Try your code"
+      "from solution_${NUMBER}_${N} import *\n",
+      "\n",
+      "\n"
+   ]
+  },
+  {
    "cell_type": "markdown",
    "execution_count": null,
-   "metadata": {},
+   "metadata": {"hw_cell_type": "test_header", "action": "delete"},
    "outputs": [],
    "source": [
     "#### Test ${NUMBER}.${N} "
@@ -93,14 +105,7 @@ do
   {
    "cell_type": "code",
    "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
+   "metadata": {"hw_cell_type": "test_file", "action": "delete"},
    "outputs": [
     {
      "name": "stdout",
@@ -112,7 +117,7 @@ do
    ],
    "source": [
     "%%writefile test/test_${NUMBER}_${N}.py\n",
-    "from solution_${NUMBER}_${N} import foo\n",
+    "from solution_${NUMBER}_${N} import *\n",
     "\n",
     "def test_${NUMBER}_${N}():\n",
     "    assert True, \"No Test\""
