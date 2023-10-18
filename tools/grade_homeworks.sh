@@ -40,18 +40,22 @@ echo "Test: ${T_DIR}"
 echo "--------------------------------------------------------------------------------"
 cat $MAIN_DIR/private/ifi8410_users.log | while read U S D
 do
-        echo $U
-        HOME_DIR="${BACKUP_DIR}/${U}"
-       
-        if [ -d ${HOME_DIR}/${ASSIGNMENT} ]
-        then
-            printf "${ASSIGNMENT}\t$U\tTEST START\n"
-            timeout 120s bash -c "cd ${HOME_DIR}/${ASSIGNMENT}; python3 -m pytest ${T_DIR}" 2>&1 \
-                | awk "{print \"$ASSIGNMENT\t$U\t\", \$0}" \
+    echo $U
+    HOME_DIR="${BACKUP_DIR}/${U}"
+    
+    if [ -d ${HOME_DIR}/${ASSIGNMENT} ]
+    then
+        printf "${ASSIGNMENT}\t$U\tTEST START\n"
+        for TST in "${T_DIR}/test*.py"
+        do
+            timeout 120s bash -c "cd ${HOME_DIR}/${ASSIGNMENT}; python3 -m pytest ${TST}" 2>&1 \
+                | awk "{print \"$ASSIGNMENT\t$U\t${TST}\t\", \$0}" \
                 | tee -ai "${LOG_DIR}/grades_${ASSIGNMENT}_${DSTAMP}.log"
-            printf "${ASSIGNMENT}\t$U\tTEST END\n\n"
-        else
-            printf "$ASSIGNMENT\t$U\tNO ASSIGNMENT\n\n"
-        fi
+        done
+        printf "${ASSIGNMENT}\t$U\tTEST END\n\n"
+    else
+        printf "$ASSIGNMENT\t$U\tNO ASSIGNMENT\n\n"
+    fi
+   
 done
 echo "Done."
