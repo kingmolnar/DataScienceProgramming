@@ -46,10 +46,11 @@ do
     if [ -d ${HOME_DIR}/${ASSIGNMENT} ]
     then
         printf "${ASSIGNMENT}\t$U\tTEST START\n"
-        for TST in "${T_DIR}/test*.py"
+        for TST in ${T_DIR}/test_*.py
         do
+            T_LABEL=`basename $TST .py`
             timeout 120s bash -c "cd ${HOME_DIR}/${ASSIGNMENT}; python3 -m pytest ${TST}" 2>&1 \
-                | awk "{print \"$ASSIGNMENT\t$U\t${TST}\t\", \$0}" \
+                | awk "{print \"$ASSIGNMENT\t$U\t${T_LABEL}\t\", \$0}" \
                 | tee -ai "${LOG_DIR}/grades_${ASSIGNMENT}_${DSTAMP}.log"
         done
         printf "${ASSIGNMENT}\t$U\tTEST END\n\n"
