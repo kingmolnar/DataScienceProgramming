@@ -1,4 +1,4 @@
-# Session 13 :: Error Based Learning
+# Session 9 :: Error Based Learning
 
 In error-based machine learning, we perform a search for a set of parameters for a parameterized model that minimizes the total error across the predictions mase by that model with respect to as set of training instances. The session introduces key ideas of a **parameterized model**, measuring **error** and an **error surface**.
 
@@ -12,6 +12,3 @@ In error-based machine learning, we perform a search for a set of parameters for
 Slides are posted on the http://iCollege.gsu.edu
 
 
-
-
-## Assignment 13:  HW13
