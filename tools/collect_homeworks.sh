@@ -24,7 +24,7 @@ fi
 MAIN_DIR="`dirname $0`/.."
 CLASS_DIR=IFI8410F23
 GIT_REPO=https://github.com/kingmolnar/DataScienceProgramming.git
-GIT_DIR=DataScienceProgramming
+GIT_DIR=DataScienceProgramming/Homework
 BACKUP_DIR=$MAIN_DIR/private/backup
 
 
@@ -35,7 +35,8 @@ function process_user() {
     U=$1
     echo $U
     HOME_DIR=/home/$U
-    mkdir -p $BACKUP_DIR/$HOMEWORK/$U/$TS 
+    # mkdir -p $BACKUP_DIR/$HOMEWORK/$U/$TS 
+    mkdir -p $BACKUP_DIR/$U/$TS 
     if [ -d "$HOME_DIR/$CLASS_DIR/$GIT_DIR" ]
     then
         printf "$TS\t$U\SUBMISSION START\n"
