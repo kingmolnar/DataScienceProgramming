@@ -17,8 +17,8 @@ The schedule below applies to Fall 2023. Please, refer to this page for any chan
 |	7 | We, Oct 4 		| [Information-based Learning; Python libraries for statistics and ML](08-Information-Based-Learning) | [PY #12](https://wesmckinney.com/book/modeling) + ML #4.1-3 | [Homework 5](Homework/HW05)  |
 |	8 | We, Oct 11 		| Presentations | (none) | [DA Project](DataExplorationProject) |
 |	9 | We, Oct 18 		| [Error-based Learning](09-Error-Based-Learning) | ML #7.1-3 | (none) |
-|	10 | We, Oct 25 	| [Evaluation of ML Models](10-ML-Model-Evaluation) | ML #9.1-3 | (none) |
-|	11 | We, Nov 1 		| [Unsupervised Learning](11-Unsupervised-Learning) | ML #10.1-3 | (none) |
+|	10 | We, Oct 25 	| [Evaluation of ML Models](10-ML-Model-Evaluation) | ML #9 | (none) |
+|	11 | We, Nov 1 		| [Unsupervised Learning](11-Unsupervised-Learning) | ML #10 | (none) |
 |	12 | We, Nov 8 		| Exam | review | (none) |
 |	13 | We, Nov 15 	| Case Study | ML #12 + #14 | [Homework 6](Homework/HW06), [Homework 7](Homework/HW07), [Homework 8](Homework/HW08) |
 |	   | We, Nov 22	    | *(Winter Break)* | | |
