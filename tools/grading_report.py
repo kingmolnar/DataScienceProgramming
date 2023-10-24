@@ -19,11 +19,18 @@ import json
 import numpy as np
 import pandas as pd
 import datetime
+T_now = datetime.datetime.now
+
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+
 from src.homework_grading import (
     summary_log,
     summary_grade,
     create_homework_report,
+    load_icollege_users,
+    create_icollege_import_table,
 )
 
 TS = datetime.datetime.now().strftime('%Y-%m-%d')
@@ -31,7 +38,7 @@ TS = datetime.datetime.now().strftime('%Y-%m-%d')
 MAIN_DIR = os.path.dirname(os.path.dirname(__file__))
 print(MAIN_DIR)
 
-def main(assignment):
+def main(assignment, max_points: int = None):
     RESULTS_PREFIX = jp(MAIN_DIR, f'log/grades_{assignment}')
     latest_log = sorted(glob(f"{RESULTS_PREFIX}*"), reverse=True)[0]
     print(f"Latest log file: {latest_log}")
@@ -54,6 +61,13 @@ def main(assignment):
         .reset_index()
     agg_hw.to_excel(jp(grad_path, f"summary-{assignment}-{TS}.xlsx"), index=None)
     
+    ### Create import file for iCollege
+    dtol_user = load_icollege_users(jp(MAIN_DIR, 'private', 'PROGRAMMING'))
+    dtol_import = create_icollege_import_table(dtol_user, agg_hw, assignment=assignment, max_points=max_points)
+    dtol_import.to_csv(jp(grad_path, f"icollege-import-{assignment}-{TS}.csv"), index=None)
+    
+    ### Report
+    T_0 = T_now()
     for u in hw.User.dropna().drop_duplicates():
         print(f"User: {u}")
         if len(u)==0:
@@ -73,7 +87,11 @@ if __name__ == '__main__':
         print(TITLE)
         assignment = sys.argv[1].strip()
         print(f"Assignment: {assignment}")
-        main(assignment)
+        if len(sys.argv)>2:
+            max_points = int(sys.argv[2]) 
+            main(assignment, max_points=max_points)
+        else:
+            main(assignment)
     else:
-        print(f"Usage: {os.path.basename(__file__)} ASSIGNMENT\n")
+        print(f"Usage: {os.path.basename(__file__)} ASSIGNMENT [MAX_POINTS]\n")
         print(f"       whith ASSIGNMENT one of HW01, HW02, ...")

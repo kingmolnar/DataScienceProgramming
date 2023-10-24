@@ -185,4 +185,57 @@ def create_homework_report(log_df: pd.DataFrame, assignment: str, user: str, bin
     return output
     
     
+def load_icollege_users(path_pattern: str) -> pd.DataFrame:
+    """Load grades export from iCollege as CSV file 
+
+    Args:
+        path_pattern (str): Path pattern/prefix that is used for the export file. Expects that export files have date stamp
+
+    Returns:
+        pd.DataFrame: DataFrame with 'OrgDefinedId', 'Username', 'End-of-Line Indicator', and 'User'
+    """
+    latest_dtol_csv = sorted(glob(f"{path_pattern}*.csv"), reverse=True)[0]
+    print(f"Using iCollege export file: {latest_dtol_csv}")
+    dtol_df = pd.read_csv(latest_dtol_csv)
+    print(f"Number of records: {dtol_df:,}")
+    dtol_df2 = dtol_df[dtol_df.OrgDefinedId!='#'][['OrgDefinedId', 'Username','End-of-Line Indicator']].copy()
+    dtol_df2['User'] = dtol_df2.Username.map(lambda s: s.replace('#', '').strip())
+    return dtol_df2
+
+
+def create_icollege_import_table(dtol_df: pd.DataFrame, agg_hw: pd.DataFrame, assignment: str,
+                                    max_points:int = 50, category:str = 'Homework') -> pd.DataFrame:
+    """Prepare import table for homework assignment
+
+    Args:
+        dtol_df (pd.DataFrame): exported table from iCollege
+        agg_hw (pd.DataFrame): summary points from grading
+        assignment (str): one of 'HW01', 'HW02', ...
+        max_points (int, optional): Max number if Points. Defaults to 50.
+        category (str, optional): iCollege category. Defaults to 'Homework'.
+
+    Returns:
+        pd.DataFrame: DataFrame to be saved as CSV and imported to iCollege
+    """
+    if max_points > 0:
+        if len(category) > 0:
+            hw_col = f'{assignment} Points Grade <Numeric MaxPoints:{max_points} Category:{category}>'
+        else:
+            hw_col = f'{assignment} Points Grade <Numeric MaxPoints:{max_points}>'
+    else:
+        if len(category) > 0:
+            hw_col = f'{assignment} Points Grade <Category:{category}>'
+        else:
+            hw_col = f'{assignment}'
+    
+    subdf = agg_hw[agg_hw.Assignment==assignment]
+    if subdf.shape[0] == 0:
+        print(f"No matching records in grade summary.")
+        return None
+    
+    jdf = dtol_df.set_index('User').join(subdf.set_index('User')[['Points']], how='left').copy()
+    jdf.fillna({'Points': 0}, inplace=True)
+    jdf.rename({'Points': hw_col}, axis=1, inplace=True)
+    jdf[['OrgDefinedId', 'Username', hw_col, 'End-of-Line Indicator']]
+    return jdf
 
