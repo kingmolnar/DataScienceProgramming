@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
+TITLE = r"""
+   ____               _ _               ____                       _   
+  / ___|_ __ __ _  __| (_)_ __   __ _  |  _ \ ___ _ __   ___  _ __| |_ 
+ | |  _| '__/ _` |/ _` | | '_ \ / _` | | |_) / _ \ '_ \ / _ \| '__| __|
+ | |_| | | | (_| | (_| | | | | | (_| | |  _ <  __/ |_) | (_) | |  | |_ 
+  \____|_|  \__,_|\__,_|_|_| |_|\__, | |_| \_\___| .__/ \___/|_|   \__|
+                                |___/            |_|                   
 
+"""
 from typing import Any
 import sys
 import os
@@ -62,6 +70,7 @@ def main(assignment):
 
 if __name__ == '__main__':
     if len(sys.argv)>1:
+        print(TITLE)
         assignment = sys.argv[1].strip()
         print(f"Assignment: {assignment}")
         main(assignment)

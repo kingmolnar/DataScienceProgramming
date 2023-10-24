@@ -1,7 +1,22 @@
+#  ██████╗ ██████╗  █████╗ ██████╗ ██╗███╗   ██╗ ██████╗                    
+# ██╔════╝ ██╔══██╗██╔══██╗██╔══██╗██║████╗  ██║██╔════╝                    
+# ██║  ███╗██████╔╝███████║██║  ██║██║██╔██╗ ██║██║  ███╗                   
+# ██║   ██║██╔══██╗██╔══██║██║  ██║██║██║╚██╗██║██║   ██║                   
+# ╚██████╔╝██║  ██║██║  ██║██████╔╝██║██║ ╚████║╚██████╔╝                   
+#  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝                    
+                                                                          
+# ███████╗██╗   ██╗███╗   ██╗ ██████╗████████╗██╗ ██████╗ ███╗   ██╗███████╗
+# ██╔════╝██║   ██║████╗  ██║██╔════╝╚══██╔══╝██║██╔═══██╗████╗  ██║██╔════╝
+# █████╗  ██║   ██║██╔██╗ ██║██║        ██║   ██║██║   ██║██╔██╗ ██║███████╗
+# ██╔══╝  ██║   ██║██║╚██╗██║██║        ██║   ██║██║   ██║██║╚██╗██║╚════██║
+# ██║     ╚██████╔╝██║ ╚████║╚██████╗   ██║   ██║╚██████╔╝██║ ╚████║███████║
+# ╚═╝      ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+
 from typing import Any, Tuple
 from glob import glob
 import re
 import json
+import datetime
 import numpy as np
 import pandas as pd
 
@@ -98,13 +113,20 @@ def summary_grade(hw_df: pd.DataFrame) -> pd.DataFrame:
     return gr_df
 
 
-def create_homework_report(log_df: pd.DataFrame, assignment: str, user: str, bins=5) -> str:
+def create_homework_report(log_df: pd.DataFrame, assignment: str, user: str, bins=5,
+                            points_per_problem: int = None, max_points: int = None) -> str:
     output = ""
         
     hw_df = log_df[log_df.Assignment==assignment].drop('RowNumber', axis=1)
     sub_df = hw_df[hw_df.User==user]
     
     output += str(f"# Homework {assignment} for {user}\n\n")
+    output += str("Report generated on {}\n".format(datetime.datetime.now().strftime('%Y-%m-%d')))
+    if points_per_problem:
+        output += str(f"Number of points per problem: {points_per_problem}\n")
+    if max_points:
+        output += str(f"Maximum number of points: {max_points}\n")
+    output += str("\n")
 
     agg_df = sub_df.agg({
             'Passed': 'sum',
@@ -164,49 +186,3 @@ def create_homework_report(log_df: pd.DataFrame, assignment: str, user: str, bin
     
     
 
-# def summary_log2(filename: str) -> pd.DataFrame: 
-#     results = open(filename, "r", encoding='utf-8').readlines()
-#     print(f"Number or log lines: {len(results):,}")
-#     cursor = 0
-#     records = []
-
-#     while cursor < len(results):
-#         ## find begin of test summary
-#         while (cursor < len(results)) and ('= short test summary info =' not in results[cursor]):
-#             cursor += 1
-#         if cursor >= len(results):
-#             break
-#         current_assignment, current_user, _ = results[cursor].split('\t')
-#         ## collect failure messages
-#         current_failures = []
-#         cursor += 1
-#         loop_continue = True
-#         while loop_continue and (cursor < len(results)):
-#             if pat_failed.search(results[cursor]):
-#                 loop_continue = False
-#             elif pat_passed.search(results[cursor]):
-#                 loop_continue = False
-#             else: 
-#                 mesg = results[cursor].split('\t')[-1]
-#                 current_failures.append(mesg.strip())
-#                 cursor += 1
-#         ## get score
-#         fail_res = pat_failed.search(results[cursor])
-#         current_failed = int(fail_res.group(1)) if fail_res else 0
-#         pass_res = pat_passed.search(results[cursor])
-#         current_passed = int(pass_res.group(1)) if pass_res else 0
-#         # current_passed, current_failed
-
-#         ## add to records
-#         records.append({
-#             'user_id': current_user,
-#             'assignment': current_assignment,
-#             'number_correct': current_passed,
-#             'number_incorrect': current_failed,
-#             'error_messages': '^'.join(current_failures)
-#         })
-        
-#     df = pd.DataFrame(records)
-#     df.sort_values('user_id', inplace=True)
-#     print(f"Number of records: {df.shape[0]}")
-#     return df
