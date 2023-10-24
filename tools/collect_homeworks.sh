@@ -47,6 +47,7 @@ function process_user() {
         date > $BACKUP_DIR/$U/$TS/NO_SUBMISSION
         printf "$HOME_DIR/$CLASS_DIR/$GIT_DIR/$TS\t$U\tNO SUBMISSION\n\n"
     fi
+    return
 }
 
 if [ -z "$1" ]
