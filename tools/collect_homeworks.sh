@@ -60,6 +60,7 @@ else
     process_user $1
 fi
 
+echo "Updating permissions. Please wait..."
 chown -R pmolnar.pmolnar $BACKUP_DIR
 
 echo "Done."
