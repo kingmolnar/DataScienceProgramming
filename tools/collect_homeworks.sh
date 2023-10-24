@@ -30,22 +30,33 @@ BACKUP_DIR=$MAIN_DIR/private/backup
 
 TS=`date +"%Y%m%d_%H%M"`
 
-cat $MAIN_DIR/private/ifi8410_users.log | while read U S D
-do
-        echo $U
-        HOME_DIR=/home/$U
-        mkdir -p $BACKUP_DIR/$HOMEWORK/$U/$TS 
-        if [ -d "$HOME_DIR/$CLASS_DIR/$GIT_DIR" ]
-        then
-            printf "$TS\t$U\SUBMISSION START\n"
-            cp -av $HOME_DIR/$CLASS_DIR/$GIT_DIR $BACKUP_DIR/$U/$TS | awk "{print \"$TS\t$U\t\", \$0}"
-            date > $BACKUP_DIR/$U/SUBMISSION
-            printf "$TS\t$U\SUBMISSION END\n\n"
-        else
-            date > $BACKUP_DIR/$U/$TS/NO_SUBMISSION
-            printf "$HOME_DIR/$CLASS_DIR/$GIT_DIR/$TS\t$U\tNO SUBMISSION\n\n"
-        fi
-done
+
+function process_user() {
+    U=$1
+    echo $U
+    HOME_DIR=/home/$U
+    mkdir -p $BACKUP_DIR/$HOMEWORK/$U/$TS 
+    if [ -d "$HOME_DIR/$CLASS_DIR/$GIT_DIR" ]
+    then
+        printf "$TS\t$U\SUBMISSION START\n"
+        cp -av $HOME_DIR/$CLASS_DIR/$GIT_DIR $BACKUP_DIR/$U/$TS | awk "{print \"$TS\t$U\t\", \$0}"
+        date > $BACKUP_DIR/$U/SUBMISSION
+        printf "$TS\t$U\SUBMISSION END\n\n"
+    else
+        date > $BACKUP_DIR/$U/$TS/NO_SUBMISSION
+        printf "$HOME_DIR/$CLASS_DIR/$GIT_DIR/$TS\t$U\tNO SUBMISSION\n\n"
+    fi
+}
+
+if [ -z "$1" ]
+then
+    cat $MAIN_DIR/private/ifi8410_users.log | while read USR S D
+    do
+        process_user $USR
+    done
+else
+    process_user $1
+fi
 
 chown -R pmolnar.pmolnar $BACKUP_DIR
 
