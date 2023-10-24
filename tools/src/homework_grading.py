@@ -197,7 +197,7 @@ def load_icollege_users(path_pattern: str) -> pd.DataFrame:
     latest_dtol_csv = sorted(glob(f"{path_pattern}*.csv"), reverse=True)[0]
     print(f"Using iCollege export file: {latest_dtol_csv}")
     dtol_df = pd.read_csv(latest_dtol_csv)
-    print(f"Number of records: {dtol_df:,}")
+    print(f"Number of records: {dtol_df.shape[0]:,}")
     dtol_df2 = dtol_df[dtol_df.OrgDefinedId!='#'][['OrgDefinedId', 'Username','End-of-Line Indicator']].copy()
     dtol_df2['User'] = dtol_df2.Username.map(lambda s: s.replace('#', '').strip())
     return dtol_df2
