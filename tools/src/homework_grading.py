@@ -236,7 +236,8 @@ def create_icollege_import_table(dtol_df: pd.DataFrame, agg_hw: pd.DataFrame, as
     jdf = dtol_df.set_index('User').join(subdf.set_index('User')[['Points']], how='left').copy()
     jdf.fillna({'Points': 0}, inplace=True)
     jdf['Points'] = jdf.Points.astype(int)
+    jdf['OrgDefinedId'] = jdf.OrgDefinedId.map(lambda s: s.replace('#', ''))
+    jdf['Username'] = jdf.Username.map(lambda s: s.replace('#', ''))
     jdf.rename({'Points': hw_col}, axis=1, inplace=True)
-    jdf[['OrgDefinedId', 'Username', hw_col, 'End-of-Line Indicator']]
-    return jdf
+    return jdf[['OrgDefinedId', 'Username', hw_col, 'End-of-Line Indicator']]
 
