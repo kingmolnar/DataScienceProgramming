@@ -4,6 +4,9 @@ import hashlib
 
 def test_6_19():
     result = melt_data()
-    assert isinstance(result, pd.DataFrame), "Invalid type"  
-    assert result.shape == (3, 2), "Invalid shape"  
-    assert hashlib.sha256(str(result).encode('utf-8')).hexdigest() == 'cb66480134ac70d36d1a715badab6913e2f280e7124a0ef29d9c7717dad3f7a5', "Invalid result" 
+    assert isinstance(result, pd.Series), "Invalid type"  
+    #     assert result.shape[1] == 3, "Invalid shape"
+    result_str = str(result.head(100).to_csv(index=None)).encode('utf-8')
+    assert hashlib.sha256(result_str).hexdigest() \
+                          == '332ffd7d4eac2e55cc97d7576616bd40581c46e0cdf52c67064691fae4735c17', \
+                          "Invalid result" 
