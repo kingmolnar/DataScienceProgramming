@@ -2,7 +2,7 @@ import pandas as pd
 import hashlib
 
 def test_7_13():
-    result = pd.read_csv('penguins_8_13.csv')
+    result = pd.read_csv('penguins_7_13.csv')
     assert result.shape[1] == 4, "Invalid number of columns"
 #    row1 = result.iloc[0,:].to_list()
 #    row3 = result.iloc[2,:].to_list()
