@@ -27,6 +27,8 @@ TEST_DIR["HW02"]="${MAIN_DIR}/Homework/HW02/test"
 TEST_DIR["HW03"]="${MAIN_DIR}/Homework/HW03/test"
 TEST_DIR["HW04"]="${MAIN_DIR}/Homework/HW04/test"
 TEST_DIR["HW05"]="${MAIN_DIR}/Homework/HW05/test"
+TEST_DIR["HW06"]="${MAIN_DIR}/Homework/HW06/test"
+TEST_DIR["HW07"]="${MAIN_DIR}/Homework/HW07/test"
 
 BACKUP_DIR="${MAIN_DIR}/private/backup"
 LOG_DIR="${MAIN_DIR}/log"
