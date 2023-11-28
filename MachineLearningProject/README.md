@@ -6,7 +6,7 @@ Additionally, you will create a PowerPoint presentation to communicate your find
 ## Deliverables
 - Code that generates all artifacts: data tables (CSV, Excel) and figures (PNG)
 - Notebook with report on the ML experiments (limit code in notebook to calling functions from your Python packages)
-- Comprehensive PowerPoint presentation that , see template PPTX file [DataExploration_example.pptx](DataExploration_example.pptx))
+- Comprehensive PowerPoint presentation that , see template PPTX file [DataExploration_example.pptx](../DataExplorationProject/DataExploration_example.pptx))
 
 
 ## Project Guidelines
