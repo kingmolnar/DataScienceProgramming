@@ -31,4 +31,14 @@ chmod o=x $DEST_DIR/$TERM_DIR
 for STUDENT in `$TOOLS/students_list.py`
 do
     echo "Student: $STUDENT"
+    STUDENT_DIR="$DEST_DIR/$TERM_DIR/$STUDENT"
+    mkdir 
+    for H in {{00..10}}
+    do
+        HW_DIR="${STUDENT_DIR}/HW${H}"
+        echo mkdir -p $HW_DIR
+    done
+    echo chgrp -R $STUDENT $STUDENT_DIR
+    echo chmod -R o-rwx $STUDENT_DIR
+    echo chmod -R g+w $STUDENT_DIR
 done
