@@ -14,14 +14,21 @@ cat <<'EOF'
  |  _| (_) | | (_| |  __/ |  \__ \                    
  |_|  \___/|_|\__,_|\___|_|  |___/    
 
-EOF                                     
+EOF
+TOOLS=`dirname $0`
 DEST_DIR="/data/IFI8410/submissions"
 TERM_DIR="P24"
+
+if [ ! -d $DEST_DIR ]
+then
+    echo "Folder does not exist: $DEST_DIR"
+    exit 1
+fi
 
 mkdir -p $DEST_DIR/$TERM_DIR
 chmod o=x $DEST_DIR/$TERM_DIR
 
-for STUDENT IN `./students_list.py`
+for STUDENT in `$TOOLS/students_list.py`
 do
     echo "Student: $STUDENT"
 done
