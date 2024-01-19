@@ -33,7 +33,7 @@ do
     echo "Student: $STUDENT"
     STUDENT_DIR="$DEST_DIR/$TERM_DIR/$STUDENT"
     mkdir 
-    for H in {{00..10}}
+    for H in {00..10}
     do
         HW_DIR="${STUDENT_DIR}/HW${H}"
         echo mkdir -p $HW_DIR
