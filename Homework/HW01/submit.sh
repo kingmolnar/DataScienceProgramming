@@ -70,14 +70,13 @@ fi
 ##
 
 mkdir -p "$DEST/data"
-cat <<EOF | while read F; do if [ -f "$F" ]; then echo "SUMBIT '$F'"; cp -a $F "$DEST/data"; else echo "skip '$F'"; fi; done
+cat <<EOF | while read F; do if [ -f "$F" ]; then echo ".....SUBMIT '$F'"; cp -a $F "$DEST/data"; else echo "!!! MISSING '$F' !!!"; fi; done
 data/joined_words.lst
 data/negative_words_alphabetic_order.lst
 data/negative_words.lst
 data/positive_negative_table.csv
 data/positive_words_alphabetic_order.lst
 data/positive_words.lst
-data/sentiment_labelled_sentences.tsv
 data/sentiment_lower_negative.psv
 data/sentiment_lower_positive.psv
 data/sentiment_lower.psv
@@ -94,7 +93,7 @@ data/top_100_positive_words.lst
 data/word_frequency_positive_negative.csv
 EOF
 
-cat <<EOF | while read F; do if [ -f "$F" ]; then echo "SUMBIT '$F'"; cp -a $F "$DEST/"; else echo "skip '$F'"; fi; done
+cat <<EOF | while read F; do if [ -f "$F" ]; then echo ".....SUBMIT '$F'"; cp -a $F "$DEST/"; else echo "!!! MISSING '$F' !!!"; fi; done
 output_1_17.txt
 output_1_18.txt
 output_1_2.txt
