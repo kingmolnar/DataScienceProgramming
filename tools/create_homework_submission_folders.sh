@@ -38,9 +38,9 @@ do
         HW_DIR="${STUDENT_DIR}/HW${H}"
         mkdir -p $HW_DIR
     done
-    chgrp -R $STUDENT $STUDENT_DIR
+    sudo chgrp -R $STUDENT $STUDENT_DIR
     chmod -R o-rwx $STUDENT_DIR
     chmod -R g+w $STUDENT_DIR
 done
-ls -l R $DEST_DIR/$TERM_DIR
+ls -lR $DEST_DIR/$TERM_DIR
 echo "Done."
