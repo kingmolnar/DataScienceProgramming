@@ -41,6 +41,7 @@ do
     sudo chgrp -R $STUDENT $STUDENT_DIR
     chmod -R o-rwx $STUDENT_DIR
     chmod -R g+w $STUDENT_DIR
+    sudo chmod -R g+s $STUDENT_DIR
 done
-ls -lR $DEST_DIR/$TERM_DIR
+# ls -lR $DEST_DIR/$TERM_DIR
 echo "Done."
