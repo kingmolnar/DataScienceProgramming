@@ -17,6 +17,7 @@ cat <<EOF
    "cell_type": "markdown",
    "metadata": {},
    "source": [
+    "<p style=\"text-align:right;color:red;font-weight:bold;font-size:16pt;padding-bottom:20px\">Please, copy this notebook before editing!</p>",
     "# Homework ${NUMBER}"
    ]
   },
@@ -99,7 +100,23 @@ do
    "metadata": {},
    "outputs": [],
    "source": [
-    "#### Test ${NUMBER}.${N} "
+    "#### Test ${NUMBER}.${N} ",
+    "Execute the cell below to test your solution..."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": []
+    }
+   ],
+   "source": [
+    "! test/run_test.sh ${N}\n"
    ]
   },
   {
@@ -133,7 +150,8 @@ cat <<EOF
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "# Testing"
+    "# Testing",
+    "Execute the cell below to run all tests..."
    ]
   },
   {
@@ -142,8 +160,7 @@ cat <<EOF
    "metadata": {},
    "outputs": [],
    "source": [
-    "%%sh\n",
-    "python3 -m pytest"
+    "! test/run_test.sh"
    ]
   },
   {
@@ -154,7 +171,12 @@ cat <<EOF
     "- This homework is due by ${DUE_DATE}, 5:30PM (EDT)\n",
     "- Make sure that all your programs and output files are in the exact folder as specified in the instructions.\n",
     "- All file names on this system are case sensitive. Verify if you copy your work from a local computer to your home directory on ARC.\n",
-    "- No further action is need to submit your assignment."
+    "\n",
+    "**Run the cell below to submit your work.**\n",
+    "\n",
+    "- You may submit your work multipe times up to the deadline of the assignment.\n",
+    "- Please note that any files that you previously submitted will\n",
+    "be overwritten by your current files."
    ]
   },
   {
@@ -162,7 +184,9 @@ cat <<EOF
    "execution_count": null,
    "metadata": {},
    "outputs": [],
-   "source": []
+   "source": [
+    "! ./submit.sh -y"
+   ]
   }
  ],
  "metadata": {
