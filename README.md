@@ -32,14 +32,14 @@ The schedule below applies to Spring 2024. Please, refer to this page for any ch
 |---------------|---------------|---------------|
 |	[HW01](Homework/HW01)	|	Wednesday, January 17, 2024	|	Wednesday, January 24, 2024	|
 |	[HW02](Homework/HW02)	|	Wednesday, January 24, 2024	|	Wednesday, January 31, 2024	|
-|	[HW03](Homework/HW03)	|	Wednesday, January 31, 2024	|	Wednesday, February 7, 2024	|
-|	[HW04](Homework/HW04)	|	Wednesday, February 7, 2024	|	Wednesday, February 14, 2024	|
-|	[HW05](Homework/HW05)	|	Wednesday, February 14, 2024	|	Wednesday, February 21, 2024	|
-|	[HW06](Homework/HW06)	|	Wednesday, March 6, 2024	|	Wednesday, March 13, 2024	|
-|	[HW07](Homework/HW07)	|	Wednesday, March 20, 2024	|	Wednesday, March 27, 2024	|
-|	[HW08](Homework/HW08)	|	Wednesday, March 27, 2024	|	Wednesday, April 3, 2024	|
-|	[HW09](Homework/HW09)	|	Wednesday, April 3, 2024	|	Wednesday, April 10, 2024	|
-|	[HW10](Homework/HW10)	|	Wednesday, April 10, 2024	|	Wednesday, April 17, 2024	|
+|	[HW03](Homework/HW03)	|	Wednesday, February 7, 2024	|	Wednesday, February 14, 2024	|
+|	[HW04](Homework/HW04)	|	Wednesday, February 14, 2024	|	Wednesday, February 21, 2024	|
+|	[HW05](Homework/HW05)	|	Wednesday, March 6, 2024	|	Wednesday, March 13, 2024	|
+|	[HW06](Homework/HW06)	|	Wednesday, March 20, 2024	|	Wednesday, March 27, 2024	|
+|	[HW07](Homework/HW07)	|	Wednesday, March 27, 2024	|	Wednesday, April 3, 2024	|
+|	[HW08](Homework/HW08)	|	Wednesday, April 3, 2024	|	Wednesday, April 10, 2024	|
+|	[HW09](Homework/HW09)	|	Wednesday, April 10, 2024	|	Wednesday, April 17, 2024	|
+	[HW10](Homework/HW10)	|	Wednesday, April 17, 2024	|	Wednesday, April 24, 2024	|
 
 
 ## Text Books
