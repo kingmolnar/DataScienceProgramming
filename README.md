@@ -39,7 +39,7 @@ The schedule below applies to Spring 2024. Please, refer to this page for any ch
 |	[HW07](Homework/HW07)	|	Wednesday, March 27, 2024	|	Wednesday, April 3, 2024	|
 |	[HW08](Homework/HW08)	|	Wednesday, April 3, 2024	|	Wednesday, April 10, 2024	|
 |	[HW09](Homework/HW09)	|	Wednesday, April 10, 2024	|	Wednesday, April 17, 2024	|
-	[HW10](Homework/HW10)	|	Wednesday, April 17, 2024	|	Wednesday, April 24, 2024	|
+|	[HW10](Homework/HW10)	|	Wednesday, April 17, 2024	|	Wednesday, April 24, 2024	|
 
 
 ## Text Books
