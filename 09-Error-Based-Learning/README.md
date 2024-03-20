@@ -4,8 +4,8 @@ In error-based machine learning, we perform a search for a set of parameters for
 
 ## Reading for this Session
 1. Chapter 7 of [Fundamentals of Machine Learning for Predictive Data Analytics](https://mitpress.mit.edu/books/fundamentals-machine-learning-predictive-data-analytics)
-1. [Chapter 7 Slides 'A'](http://131.96.197.204/~pmolnar/mlbook/BookSlides_7A_Error-based_Learning.pdf) (internal)
-1. [Chapter 7 Slides 'B'](http://131.96.197.204/~pmolnar/mlbook/BookSlides_7B_Error-based-Learning.pdf) (internal)
+1. [Chapter 7 Slides 'A'](http://arc.insight.gsu.edu/~pmolnar/mlbook/BookSlides_7A_Error-based_Learning.pdf) (internal)
+1. [Chapter 7 Slides 'B'](http://arc.insight.gsu.edu/~pmolnar/mlbook/BookSlides_7B_Error-based-Learning.pdf) (internal)
 1. [A tutorial on support vector regression](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.114.4288)
 
 
