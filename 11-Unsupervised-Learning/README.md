@@ -1,2 +1,2 @@
-# Unsupervized Learning
+# Unsupervised Learning
 
