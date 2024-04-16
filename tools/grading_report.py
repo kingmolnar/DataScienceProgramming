@@ -25,6 +25,8 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
+import argparse
+
 from src.homework_grading import (
     summary_log,
     summary_grade,
@@ -38,18 +40,20 @@ TS = datetime.datetime.now().strftime('%Y-%m-%d')
 MAIN_DIR = os.path.dirname(os.path.dirname(__file__))
 print(MAIN_DIR)
 
-def main(assignment, max_points: int = None):
-    RESULTS_PREFIX = jp(MAIN_DIR, f'log/grades_{assignment}')
-    latest_log = sorted(glob(f"{RESULTS_PREFIX}*"), reverse=True)[0]
+def main(assignment: str, max_points: int = None, points_per_problem: int = 2, with_date: bool = False):
+    results_prefix = jp(MAIN_DIR, f'log/grades_{assignment}')
+    latest_log = sorted(glob(f"{results_prefix}*"), reverse=True)[0]
     print(f"Latest log file: {latest_log}")
     assert os.path.isfile(latest_log), f"Log file `{latest_log}` does not exist!"
     
-    hw = summary_log(latest_log, points_per_problem=2)
+    hw = summary_log(latest_log, points_per_problem=points_per_problem)
     
     grad_path = jp(MAIN_DIR, 'private', 'grades')
     os.system(f"mkdir -p {grad_path}")
     
-    hw.to_excel(jp(grad_path, f"detailed-{assignment}-{TS}.xlsx"), index=None)
+    name_suffix = f"{assignment}-{TS}" if with_date else assignment
+
+    hw.to_excel(jp(grad_path, f"detailed-{name_suffix}.xlsx"), index=None)
     agg_hw = hw.groupby(['Assignment', 'User']) \
         .agg({
             'Passed': 'sum',
@@ -59,11 +63,12 @@ def main(assignment, max_points: int = None):
             'Points': 'sum',
         }) \
         .reset_index()
-    agg_hw.to_excel(jp(grad_path, f"summary-{assignment}-{TS}.xlsx"), index=None)
+    agg_hw.to_excel(jp(grad_path, f"summary-{name_suffix}.xlsx"), index=None)
     
     ### Create import file for iCollege
     dtol_user = load_icollege_users(jp(MAIN_DIR, 'private', 'PROGRAMMING'))
     dtol_import = create_icollege_import_table(dtol_user, agg_hw, assignment=assignment, max_points=max_points)
+    dtol_import.to_csv(jp(grad_path, f"icollege-import-{name_suffix}.csv"), index=None)
     dtol_import.to_csv(jp(grad_path, f"icollege-import-{assignment}-{TS}.csv"), index=None)
     
     ### Report
@@ -75,7 +80,7 @@ def main(assignment, max_points: int = None):
         rep = create_homework_report(hw, assignment=assignment, user=u)
         rep_path = jp(MAIN_DIR, 'private', 'report', u)
         os.system(f"mkdir -p {rep_path}")
-        with open(jp(rep_path, f"report-{assignment}-{TS}.md"), 'w', encoding='utf-8') as io:
+        with open(jp(rep_path, f"report-{name_suffix}.md"), 'w', encoding='utf-8') as io:
             io.write(rep)
             io.write('\n')
     
@@ -83,15 +88,15 @@ def main(assignment, max_points: int = None):
 
 
 if __name__ == '__main__':
-    if len(sys.argv)>1:
-        print(TITLE)
-        assignment = sys.argv[1].strip()
-        print(f"Assignment: {assignment}")
-        if len(sys.argv)>2:
-            max_points = int(sys.argv[2]) 
-            main(assignment, max_points=max_points)
-        else:
-            main(assignment)
-    else:
-        print(f"Usage: {os.path.basename(__file__)} ASSIGNMENT [MAX_POINTS]\n")
-        print(f"       whith ASSIGNMENT one of HW01, HW02, ...")
+    parser = argparse.ArgumentParser()
+    parser.add_argument('ASSIGNMENT', help='ASSIGNMENT one of HW01, HW02, ...')
+    parser.add_argument('-p', '--points-per-problem', type=int, default=2, help='Number of points per problem.')
+    parser.add_argument('-m', '--max-points', type=int, default=0, help='Maximum number of points. No maximum if 0.')
+    parser.add_argument('-t', '--with-date', action='store_true', help='Include date in file names.')
+    args = parser.parse_args()
+
+    print(TITLE)
+    print(f"Assignment: {args.ASSIGNMENT}")
+
+    main(args.ASSIGNMENT, max_points=args.max_points,
+            points_per_problem=args.points_per_problem, with_date=args.with_date)
