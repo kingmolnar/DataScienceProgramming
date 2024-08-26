@@ -6,40 +6,42 @@ This material has been developed for the course IFI 8410 in the [Master of Scien
 ## Topics and Schedule
 The schedule below applies to Spring 2024. Please, refer to this page for any changes.
 
-| Session	|	Date	|	Topic	|	Reading	|	Quiz/Exam	|
-| ----	|	----	|	----	|	----	|	----	|
-|1	|	Wednesday, January 10, 2024	|	ML Overview	|		|		|
-|2	|	Wednesday, January 17, 2024	|	[Unix/Python/Jupyter/GIT](02-Intro-Unix)	|	ML Chapters 1-2	|	Review Quiz 1	|
-|3	|	Wednesday, January 24, 2024	| [Python Foundation](03-Python-Foundation)	|	PY Chapters 1-4	|	Review Quiz 2	|
-| 4	|	Wednesday, January 31, 2024	| [Python Data Processing and Analytics](04-Python-Data)	|	PY Chapters 5-10	|	Review Quiz 3	|
-| 5	|	Wednesday, February 7, 2024	|	[Data Exploration](05-Data-Exploration)	|	ML Chapter 3	|	Review Quiz 4	|
-| 6	|	Wednesday, February 14, 2024	|	[Information-based Learning](06-Information-Based-Learning)	|	ML Chapter 4	|	Review Quiz 5	|
-| 7	|	Wednesday, February 21, 2024	|	[Similarity-based Learning](07-Similarity-Based-Learning)	|	ML Chapter 5	|	Review Quiz 6	|
-| 	|	Wednesday, February 28, 2024	|	**Midterm Exam**	|		|	Midterm	|
-| 8	|	Wednesday, March 6, 2024	|	[Probabilty-based Learning](08-Probability-Based-Learning)	|	ML Chapter 6	|	Review Quiz 7	|
-| 	|	*Wednesday, March 13, 2024*	|	*Spring Break*	|		|		|
-| 9	|	Wednesday, March 20, 2024	|	[Error-based Learning](09-Error-Based-Learning)	|	ML Chapter 7	|	Review Quiz 8	|
-| 10	|	Wednesday, March 27, 2024	|	[Evaluation of Machine Learning Models](10-ML-Model-Evaluation)	|	ML Chapter 9	|	Review Quiz 9	|
-| 11	|	Wednesday, April 3, 2024	|	[Unsupervised Learning](11-Unsupervised-Learning)	|	ML Chapter 10	|	Review Quiz 10	|
-| 12	|	Wednesday, April 10, 2024	|	[ML-OPS](12-ML-Operations)	|		|		|
-| 13	|	Wednesday, April 17, 2024	|	[ML Projects](13-ML-Projects)	|	ML Chapter 14	|		|
-|  	|	Wednesday, April 24, 2024	|	**Final Exam**	|		|	Final	|
-
+| Session | Date              | Topics                                                                 | Reading                             | Quiz/Exam                  |
+|---------|-------------------|------------------------------------------------------------------------|-------------------------------------|----------------------------|
+| 1       | August 28, 2024   | UNIX file system, command line tools, Jupyter notebook | | -/- |
+| 2       | September 4, 2024 | Python Programming | Py #2 | Quiz 1|
+| 3       | September 11, 2024| Python Data Structures and Functions, File-IO; Intro ML | Py #3; ML #1 | Quiz 2|
+| 4       | September 18, 2024| Arrays, Vectors, Matrices, Linear Algebra in Python; Data to Insights to Decisions | Py #4; ML #2 | Quiz 3, HW 3 |
+| 5       | September 25, 2024| Data Tables (Pandas, etc.); Data Exploration | Py #5; ML #3.1-5 | Quiz 4|
+| 6       | October 2, 2024   | Data Transformation and Visualization | Py #7 + #9                          | Quiz 5|
+| 7       | October 9, 2024   | String and Text, Regexp, Beautiful Soup | [online](#) | Quiz 6|
+| 8       | October 16, 2024  | | | **Midterm Exam**              |
+| 9       | October 23, 2024  | Python libraries for statistics and ML; Information-based Learning, Similarity-based Learning | Py #12; ML #4.1-3, #5.1-3           | Quiz 7 |
+| 10      | October 30, 2024  | Python Modules, classes, methods; Probability-based Learning, Error-based Learning | [online](#); ML #6.1-3, #7.1-3 | Quiz 8|
+| 11      | November 6, 2024  | Algorithms; Evaluation of ML Models                                    | [online](#); ML #9            | Quiz 9|
+| 12      | November 13, 2024 | Unsupervised Learning                                                  | ML #10 | Quiz 10, HW 10      |
+| 13      | November 20,2024 |  ML Usecases | ML #13 | Quiz 11 |
+|         | November 27, 2024 | *Thanksgiving Break* | |                            |
+| 14      | December 4, 2024  | ML Projects | | -/- |
+|         | December 11, 2024 | | | **Final Exam** |
 
 ## Homework
 
 |	Assignment	|	Date Posted	|	Due Date	|
 |---------------|---------------|---------------|
-|	[HW01](Homework/HW01)	|	Wednesday, January 17, 2024	|	Wednesday, January 24, 2024	|
-|	[HW02](Homework/HW02)	|	Wednesday, January 24, 2024	|	Wednesday, January 31, 2024	|
-|	[HW03](Homework/HW03)	|	Wednesday, February 7, 2024	|	Wednesday, February 14, 2024	|
-|	[HW04](Homework/HW04)	|	Wednesday, February 14, 2024	|	Wednesday, February 21, 2024	|
-|	[HW05](Homework/HW05)	|	Wednesday, March 6, 2024	|	Wednesday, March 13, 2024	|
-|	[HW06](Homework/HW06)	|	Wednesday, March 20, 2024	|	Wednesday, March 27, 2024	|
-|	[HW07](Homework/HW07)	|	Wednesday, March 27, 2024	|	Wednesday, April 3, 2024	|
-|	[HW08](Homework/HW08)	|	Wednesday, April 3, 2024	|	Wednesday, April 10, 2024	|
-|	[HW09](Homework/HW09)	|	Wednesday, April 10, 2024	|	Wednesday, April 17, 2024	|
-|	[HW10](Homework/HW10)	|	Wednesday, April 17, 2024	|	Wednesday, April 24, 2024	|
+|	[HW01](Homework/HW01)	| Wednesday, August 28, 2024 | Wednesday, September 4, 2024 |
+|	[HW02](Homework/HW02)	| Wednesday, September 4, 2024 | Wednesday, September 11, 2024 |
+|	[HW03](Homework/HW03)	| Wednesday, September 11, 2024 | Wednesday, September 18, 2024 |
+|	[HW04](Homework/HW04)	| Wednesday, September 18, 2024 | Wednesday, September 25, 2024 |
+|	[HW05](Homework/HW05)	| Wednesday, September 25, 2024 | Wednesday, October 2, 2024 |
+|	[HW06](Homework/HW06)	| Wednesday, October 2, 2024 | Wednesday, October 9, 2024 |
+|	[HW07](Homework/HW07)	| Wednesday, October 9, 2024 | Wednesday, October 23, 2024 |
+|	[HW08](Homework/HW08)	| Wednesday, October 23, 2024 | Wednesday, October 30, 2024 |
+|	[HW09](Homework/HW09)	| Wednesday, October 30, 2024 | Wednesday, November 6, 2024 |
+|	[HW10](Homework/HW10)	| Wednesday, November 6, 2024 | Wednesday, November 13, 2024 |
+
+
+
 
 
 ## Text Books
