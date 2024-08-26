@@ -18,7 +18,7 @@ fi
 
 MAIN_DIR="`dirname $0`/.."
 # CLASS_DIR=IFI8410F23
-SUBMISSION_DIR=/data/IFI8410/submissions/P24
+SUBMISSION_DIR=/data/IFI8410_submissions/F24
 CLASS_DIR=IFI8410F24
 GIT_REPO=https://github.com/kingmolnar/DataScienceProgramming.git
 GIT_DIR=DataScienceProgramming
