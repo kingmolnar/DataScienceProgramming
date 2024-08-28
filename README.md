@@ -11,7 +11,7 @@ The schedule below applies to Spring 2024. Please, refer to this page for any ch
 | 1       | August 28, 2024   | UNIX file system, command line tools, Jupyter notebook | | -/- |
 | 2       | September 4, 2024 | Python Programming | Py #2 | Quiz 1|
 | 3       | September 11, 2024| Python Data Structures and Functions, File-IO; Intro ML | Py #3; ML #1 | Quiz 2|
-| 4       | September 18, 2024| Arrays, Vectors, Matrices, Linear Algebra in Python; Data to Insights to Decisions | Py #4; ML #2 | Quiz 3, HW 3 |
+| 4       | September 18, 2024| Arrays, Vectors, Matrices, Linear Algebra in Python; Data to Insights to Decisions | Py #4; ML #2 | Quiz 3 |
 | 5       | September 25, 2024| Data Tables (Pandas, etc.); Data Exploration | Py #5; ML #3.1-5 | Quiz 4|
 | 6       | October 2, 2024   | Data Transformation and Visualization | Py #7 + #9                          | Quiz 5|
 | 7       | October 9, 2024   | String and Text, Regexp, Beautiful Soup | [online](#) | Quiz 6|
