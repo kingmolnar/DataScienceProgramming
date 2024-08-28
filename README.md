@@ -19,7 +19,7 @@ The schedule below applies to Spring 2024. Please, refer to this page for any ch
 | 9       | October 23, 2024  | Python libraries for statistics and ML; Information-based Learning, Similarity-based Learning | Py #12; ML #4.1-3, #5.1-3           | Quiz 7 |
 | 10      | October 30, 2024  | Python Modules, classes, methods; Probability-based Learning, Error-based Learning | [online](#); ML #6.1-3, #7.1-3 | Quiz 8|
 | 11      | November 6, 2024  | Algorithms; Evaluation of ML Models                                    | [online](#); ML #9            | Quiz 9|
-| 12      | November 13, 2024 | Unsupervised Learning                                                  | ML #10 | Quiz 10, HW 10      |
+| 12      | November 13, 2024 | Unsupervised Learning                                                  | ML #10 | Quiz 10 |
 | 13      | November 20,2024 |  ML Usecases | ML #13 | Quiz 11 |
 |         | November 27, 2024 | *Thanksgiving Break* | |                            |
 | 14      | December 4, 2024  | ML Projects | | -/- |
