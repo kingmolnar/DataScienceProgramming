@@ -1,2 +1,2 @@
-# Session 6 - Data Transformation and Visualization
+# Data Transformation and Visualization
 
