@@ -4,26 +4,29 @@ This material has been developed for the course IFI 8410 in the [Master of Scien
  at the [J. Mack Robinson College of Business](http://robinson.gsu.edu) at [Georgia State University](http://gsu.edu).
 
 ## Topics and Schedule
-The schedule below applies to Spring 2024. Please, refer to this page for any changes.
+The schedule below applies to Fall 2024. Please, refer to this page for any changes.
 
 | Session | Date              | Topics                                                                 | Reading                             | Quiz/Exam                  |
 |---------|-------------------|------------------------------------------------------------------------|-------------------------------------|----------------------------|
 | 1       | August 28, 2024   | UNIX file system, command line tools, Jupyter notebook | | -/- |
-| 2       | September 4, 2024 | Python Programming | Py #2 | Quiz 1|
-| 3       | September 11, 2024| Python Data Structures and Functions, File-IO; Intro ML | Py #3; ML #1 | Quiz 2|
-| 4       | September 18, 2024| Arrays, Vectors, Matrices, Linear Algebra in Python; Data to Insights to Decisions | Py #4; ML #2 | Quiz 3 |
-| 5       | September 25, 2024| Data Tables (Pandas, etc.); Data Exploration | Py #5; ML #3.1-5 | Quiz 4|
-| 6       | October 2, 2024   | Data Transformation and Visualization | Py #7 + #9                          | Quiz 5|
+| 2       | September 4, 2024 | Python Programming | [PY #2](https://wesmckinney.com/book/python-basics) | Quiz 1|
+| 3       | September 11, 2024| Python Data Structures and Functions, File-IO; Intro ML | [PY #3](https://wesmckinney.com/book/python-builtin); [ML](https://mitpress.mit.edu/9780262044691/fundamentals-of-machine-learning-for-predictive-data-analytics/) #1 | Quiz 2|
+| 4       | September 18, 2024| Arrays, Vectors, Matrices, Linear Algebra in Python; Data to Insights to Decisions | [PY #4](https://wesmckinney.com/book/numpy-basics); [ML](https://mitpress.mit.edu/9780262044691/fundamentals-of-machine-learning-for-predictive-data-analytics/) #2 | Quiz 3 |
+| 5       | September 25, 2024| Data Tables (Pandas, etc.); Data Exploration | [PY #5](https://wesmckinney.com/book/pandas-basics); [ML](https://mitpress.mit.edu/9780262044691/fundamentals-of-machine-learning-for-predictive-data-analytics/) #3.1-5 | Quiz 4|
+| 6       | October 2, 2024   | Data Transformation and Visualization | [PY #7](https://wesmckinney.com/book/data-cleaning) + [#9](https://wesmckinney.com/book/plotting-and-visualization) | Quiz 5|
 | 7       | October 9, 2024   | String and Text, Regexp, Beautiful Soup | [online](#) | Quiz 6|
 | 8       | October 16, 2024  | | | **Midterm Exam**              |
-| 9       | October 23, 2024  | Python libraries for statistics and ML; Information-based Learning, Similarity-based Learning | Py #12; ML #4.1-3, #5.1-3           | Quiz 7 |
-| 10      | October 30, 2024  | Python Modules, classes, methods; Probability-based Learning, Error-based Learning | [online](#); ML #6.1-3, #7.1-3 | Quiz 8|
-| 11      | November 6, 2024  | Algorithms; Evaluation of ML Models                                    | [online](#); ML #9            | Quiz 9|
-| 12      | November 13, 2024 | Unsupervised Learning                                                  | ML #10 | Quiz 10 |
-| 13      | November 20,2024 |  ML Usecases | ML #13 | Quiz 11 |
+| 9       | October 23, 2024  | Python libraries for statistics and ML; Information-based Learning, Similarity-based Learning | [PY #12](https://wesmckinney.com/book/modeling); [ML](https://mitpress.mit.edu/9780262044691/fundamentals-of-machine-learning-for-predictive-data-analytics/) #4.1-3, #5.1-3           | Quiz 7 |
+| 10      | October 30, 2024  | Python Modules, classes, methods; Probability-based Learning, Error-based Learning | [online](#); [ML](https://mitpress.mit.edu/9780262044691/fundamentals-of-machine-learning-for-predictive-data-analytics/) #6.1-3, #7.1-3 | Quiz 8|
+| 11      | November 6, 2024  | Algorithms; Evaluation of ML Models                                    | [online](#); [ML](https://mitpress.mit.edu/9780262044691/fundamentals-of-machine-learning-for-predictive-data-analytics/) #9            | Quiz 9|
+| 12      | November 13, 2024 | Unsupervised Learning                                                  | [ML](https://mitpress.mit.edu/9780262044691/fundamentals-of-machine-learning-for-predictive-data-analytics/) #10 | Quiz 10 |
+| 13      | November 20,2024 |  ML Usecases | [ML](https://mitpress.mit.edu/9780262044691/fundamentals-of-machine-learning-for-predictive-data-analytics/) #13 | Quiz 11 |
 |         | November 27, 2024 | *Thanksgiving Break* | |                            |
 | 14      | December 4, 2024  | ML Projects | | -/- |
 |         | December 11, 2024 | | | **Final Exam** |
+
+- **ML**: [Fundamentals of Machine Learning for Predictive Data Analytics, 2nd Edition](https://mitpress.mit.edu/9780262044691/fundamentals-of-machine-learning-for-predictive-data-analytics/) 
+- **PY**: [Python for Data Analysis: Data Wrangling with pandas, NumPy, and Jupyter, 3rd Edition](https://wesmckinney.com/book/) 
 
 ## Homework
 
