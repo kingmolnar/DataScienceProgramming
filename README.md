@@ -29,16 +29,16 @@ The schedule below applies to Spring 2024. Please, refer to this page for any ch
 
 |	Assignment	|	Date Posted	|	Due Date	|
 |---------------|---------------|---------------|
-|	[HW01](Homework/HW01)	| Wednesday, August 28, 2024 | Wednesday, September 4, 2024 |
-|	[HW02](Homework/HW02)	| Wednesday, September 4, 2024 | Wednesday, September 11, 2024 |
-|	[HW03](Homework/HW03)	| Wednesday, September 11, 2024 | Wednesday, September 18, 2024 |
-|	[HW04](Homework/HW04)	| Wednesday, September 18, 2024 | Wednesday, September 25, 2024 |
-|	[HW05](Homework/HW05)	| Wednesday, September 25, 2024 | Wednesday, October 2, 2024 |
-|	[HW06](Homework/HW06)	| Wednesday, October 2, 2024 | Wednesday, October 9, 2024 |
-|	[HW07](Homework/HW07)	| Wednesday, October 9, 2024 | Wednesday, October 23, 2024 |
-|	[HW08](Homework/HW08)	| Wednesday, October 23, 2024 | Wednesday, October 30, 2024 |
-|	[HW09](Homework/HW09)	| Wednesday, October 30, 2024 | Wednesday, November 6, 2024 |
-|	[HW10](Homework/HW10)	| Wednesday, November 6, 2024 | Wednesday, November 13, 2024 |
+|	[HW01](Homework/HW01)	| Wednesday, August 28, 2024 | Wednesday, September 11, 2024 |
+|	[HW02](Homework/HW02)	| Wednesday, September 11, 2024 | Wednesday, September 18, 2024 |
+|	[HW03](Homework/HW03)	| Wednesday, September 18, 2024 | Wednesday, September 25, 2024 |
+|	[HW04](Homework/HW04)	| Wednesday, September 25, 2024 | Wednesday, October 2, 2024 |
+|	[HW05](Homework/HW05)	| Wednesday, October 2, 2024 | Wednesday, October 9, 2024 |
+|	[HW06](Homework/HW06)	| Wednesday, October 9, 2024 | Wednesday, October 23, 2024 |
+|	[HW07](Homework/HW07)	| Wednesday, October 23, 2024 | Wednesday, October 30, 2024 |
+|	[HW08](Homework/HW08)	| Wednesday, October 30, 2024 | Wednesday, November 6, 2024 |
+|	[HW09](Homework/HW09)	| Wednesday, November 6, 2024 | Wednesday, November 13, 2024 |
+|   [HW10](Homework/HW10)	| Wednesday, November 13, 2024 | Wednesday, November 20, 2024 |
 
 
 
