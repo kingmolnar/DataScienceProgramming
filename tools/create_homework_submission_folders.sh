@@ -16,8 +16,8 @@ cat <<'EOF'
 
 EOF
 TOOLS=`dirname $0`
-DEST_DIR="/data/IFI8410/submissions"
-TERM_DIR="P24"
+DEST_DIR="/data/IFI8410_submissions"
+TERM_DIR="F24"
 
 if [ ! -d $DEST_DIR ]
 then
