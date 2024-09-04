@@ -16,8 +16,8 @@ cat <<'EOF'
 
 EOF
 TOOLS=`dirname $0`
-DEST_DIR="/data/IFI8410/submissions"
-TERM_DIR="P24"
+DEST_DIR="/data/IFI8410_submissions"
+TERM_DIR="F24"
 
 if [ ! -d $DEST_DIR ]
 then
@@ -28,20 +28,25 @@ fi
 mkdir -p $DEST_DIR/$TERM_DIR
 chmod o=x $DEST_DIR/$TERM_DIR
 
-for STUDENT in `$TOOLS/students_list.py`
+for STUDENT in `$TOOLS/students_list.py --with-ta` 
 do
     echo "Student: $STUDENT"
     STUDENT_DIR="$DEST_DIR/$TERM_DIR/$STUDENT"
-    mkdir -p $STUDENT_DIR
-    for H in {00..10}
-    do
-        HW_DIR="${STUDENT_DIR}/HW${H}"
-        mkdir -p $HW_DIR
-    done
-    sudo chgrp -R $STUDENT $STUDENT_DIR
-    chmod -R o-rwx $STUDENT_DIR
-    chmod -R g+w $STUDENT_DIR
-    sudo chmod -R g+s $STUDENT_DIR
+    if [ ! -d $STUDENT_DIR ]
+    then
+       mkdir -p $STUDENT_DIR
+       for H in {00..10}
+       do
+           HW_DIR="${STUDENT_DIR}/HW${H}"
+           mkdir -p $HW_DIR
+       done
+       sudo chgrp -R $STUDENT $STUDENT_DIR
+       chmod -R o-rwx $STUDENT_DIR
+       chmod -R g+w $STUDENT_DIR
+       sudo chmod -R g+s $STUDENT_DIR
+    else
+       echo "${STUDENT_DIR} already exists."
+    fi
 done
 # ls -lR $DEST_DIR/$TERM_DIR
 echo "Done."
