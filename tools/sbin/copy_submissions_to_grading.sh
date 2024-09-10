@@ -30,9 +30,9 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-HW = $1
+HW="$1"
 
-find  ${SUBMISSIONS_DIR}/${TERM}/ -type d -name ${HW} | while read SOURCE REST
+find  ${SUBMISSIONS_DIR}/${TERM}/ -type d -name "${HW}" | while read SOURCE REST
 do
     echo "Processing ${SOURCE}"
     TARGET=`echo ${SOURCE} | sed "s|${SUBMISSIONS_DIR}|${GRADING_DIR}|"`
