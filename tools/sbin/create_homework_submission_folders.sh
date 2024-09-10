@@ -22,7 +22,7 @@ if [ `id -u` != 0 ]; then
     exit 1
 fi
 
-TOOLS=`dirname $0`
+TOOLS="`dirname $0`/.."
 DEST_DIR="/data/IFI8410_submissions"
 TERM_DIR="F24"
 
