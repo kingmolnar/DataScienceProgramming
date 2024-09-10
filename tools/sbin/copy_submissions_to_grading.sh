@@ -15,6 +15,7 @@ EOF
 
 TERM="F24"
 USER_ID="mjack6"
+GROUP_ID="mjack6"
 SUBMISSIONS_DIR="/data/IFI8410_submissions"
 GRADING_DIR="/data/IFI8410_grading"
 MAIN_DIR="`dirname $0`/../.."
@@ -32,11 +33,19 @@ fi
 
 HW="$1"
 
+mkdir -p ${GRADING_DIR}/${TERM}/
+chmod -R o-rwx ${GRADING_DIR}
+chown -R ${USER_ID}.${GROUP_ID} ${GRADING_DIR}
+
 find  ${SUBMISSIONS_DIR}/${TERM}/ -type d -name "${HW}" | while read SOURCE REST
 do
     echo "Processing ${SOURCE}"
     TARGET=`echo ${SOURCE} | sed "s|${SUBMISSIONS_DIR}|${GRADING_DIR}|"`
     echo "Copying to ${TARGET}"
+    mkdir -p ${TARGET}
+    cp -r ${SOURCE}/* ${TARGET}/
+    chown -R ${USER_ID}.${GROUP_ID} ${TARGET}
+    chmod -R o-rwx ${TARGET}
 done
 
 
