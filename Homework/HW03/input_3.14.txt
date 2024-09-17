@@ -1,0 +1,9 @@
+Hello, welcome to the example file.
+A
+This line is okay.
+B
+Is this line long enough?
+Yes
+No
+
+Oh yes, this one too.
