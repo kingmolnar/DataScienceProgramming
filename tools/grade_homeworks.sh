@@ -18,7 +18,9 @@ fi
 
 MAIN_DIR="`dirname $0`/.."
 # CLASS_DIR=IFI8410F24
-SUBMISSION_DIR=/data/IFI8410_submissions/F24
+TERM=F24
+SUBMISSION_DIR=/data/IFI8410_submissions/${TERM}
+GRADING_DIR=/data/IFI8410_grading/${TERM}
 CLASS_DIR=IFI8410F24
 GIT_REPO=https://github.com/kingmolnar/DataScienceProgramming.git
 GIT_DIR=DataScienceProgramming
@@ -47,12 +49,12 @@ echo "--------------------------------------------------------------------------
 echo "Test: ${T_DIR}"
 echo "--------------------------------------------------------------------------------"
 # cat $MAIN_DIR/private/ifi8410_users.log | while read U S D
-find "${SUBMISSION_DIR}" -mindepth 1 -maxdepth 1 -type d -print | while read F
+find "${GRADING_DIR}" -mindepth 1 -maxdepth 1 -type d -print | while read F
 do
     # echo $F;
     U=`basename ${F}`
     # echo -n "$U"
-    HOME_DIR="${SUBMISSION_DIR}/${U}"
+    HOME_DIR="${GRADING_DIR}/${U}"
     # echo $HOME_DIR
     if [ -d "${HOME_DIR}/${ASSIGNMENT}" ]
     then
