@@ -5,15 +5,16 @@
 #  ___) | |_| | |_) | | | | | | \__ \__ \ | (_) | | | |
 # |____/ \__,_|_.__/|_| |_| |_|_|___/___/_|\___/|_| |_|
 #                                                      
+# Version 2, reluctantly allows blanks in file names...
 #!!!!!                                            !!!!!
 #!!!!!      DO NOT DELETE OR MODIFY THIS FILE     !!!!!
 #!!!!!                                            !!!!!
 
 
 SUBMISSION="/data/IFI8410_submissions/F24"
-RLP=`realpath $0`
-DIR=`dirname $RLP`
-HW=`basename $DIR`
+RLP=`realpath "$0"`
+DIR=`dirname "$RLP"`
+HW=`basename "$DIR"`
 DEST="$SUBMISSION/$USER/$HW"
 
 if [ "$HW" == "." ]
