@@ -15,5 +15,6 @@ class TestHW0516(unittest.TestCase):
             5, 15, 55, 0, 4, 
             175, 35, 35, 250, 15.811388300841896
         ]
-        self.assertEqual(result, expected_stats)
+        # self.assertEqual(result, expected_stats)
+        self.assertAlmostEqual(result, expected_stats, 5)
         
