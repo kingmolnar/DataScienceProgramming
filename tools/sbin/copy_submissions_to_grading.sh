@@ -39,13 +39,14 @@ chown -R ${USER_ID}.${GROUP_ID} ${GRADING_DIR}
 
 find  ${SUBMISSIONS_DIR}/${TERM}/ -type d -name "${HW}" | while read SOURCE REST
 do
-    echo "Processing ${SOURCE}"
+    TS=`date +"%Y-%m-%d %H:%M:%S"`
+    echo "$HW --- $TS --- Processing ${SOURCE}"
     TARGET=`echo ${SOURCE} | sed "s|${SUBMISSIONS_DIR}|${GRADING_DIR}|"`
-    echo "Copying to ${TARGET}"
+    echo "$HW --- $TS --- Copying to ${TARGET}"
     mkdir -p ${TARGET}
-    cp -r ${SOURCE}/* ${TARGET}/
-    chown -R ${USER_ID}.${GROUP_ID} ${TARGET}
-    chmod -R o-rwx ${TARGET}
+    cp -r ${SOURCE}/* ${TARGET}/ || echo "$HW --- $TS --- ERROR --- Failed to copy from ${SOURCE} to ${TARGET}"
+    chown -R ${USER_ID}.${GROUP_ID} ${TARGET} || echo "$HW --- $TS --- ERROR --- Failed to change ownership of ${TARGET}"
+    chmod -R o-rwx ${TARGET} || echo "$HW --- $TS --- ERROR --- Failed to set permissions of ${TARGET}"
 done
 
 
