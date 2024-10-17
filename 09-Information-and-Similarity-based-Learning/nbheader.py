@@ -1,5 +1,5 @@
-%reload_ext autoreload
-%autoreload 2
+# %reload_ext autoreload
+# %autoreload 2
 from typing import List, Tuple, Dict, Any, Union
 import sys
 import os
