@@ -107,12 +107,5 @@ solution_7_19.py
 solution_7_20.py
 EOF
 
-cat <<EOF | while read F; do if [ -f "$F" ]; then echo ".....SUBMIT '$F'"; cp -a $F "$DEST/"; else echo "!!! MISSING '$F' !!!"; fi; done
-text_7_21.csv
-text_7_22.csv
-text_7_23.csv
-text_7_24.csv
-EOF
-
 echo
 echo "Submission completed. Check your assignments if you see any files marked as  !!! Missing !!!"
