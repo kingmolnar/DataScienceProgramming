@@ -18,16 +18,21 @@ class TestHybridFraudDetection(unittest.TestCase):
         for column in required_columns:
             self.assertIn(column, self.df.columns, f"Missing required column: {column}")
 
-        # Try running the hybrid model function
+        # Run the hybrid model function and capture outputs
         try:
             accuracy, report = hybrid_fraud_detection(self.df)
         except Exception as e:
             self.fail(f"Hybrid model function raised an exception: {e}")
 
-        # Check if the accuracy is a float and the report is a string
+        # Check if accuracy is a float and report is a string
         self.assertIsInstance(accuracy, float, "Accuracy should be a float.")
         self.assertIsInstance(report, str, "Classification report should be a string.")
 
-        # Check if accuracy is within a reasonable range
+        # Verify the accuracy is within an expected range
         self.assertGreaterEqual(accuracy, 0.5, "Expected accuracy to be at least 0.5.")
         self.assertLessEqual(accuracy, 1.0, "Accuracy cannot exceed 1.0.")
+
+        # Check for essential metrics in the classification report
+        self.assertIn("precision", report, "Classification report is missing 'precision'.")
+        self.assertIn("recall", report, "Classification report is missing 'recall'.")
+        self.assertIn("f1-score", report, "Classification report is missing 'f1-score'.")
