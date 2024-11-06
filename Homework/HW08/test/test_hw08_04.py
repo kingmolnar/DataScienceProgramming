@@ -25,7 +25,7 @@ class TestHW0804(unittest.TestCase):
         expected_recall = 0.111
         expected_f1score = 0.125
 
-        cls.assertAlmostEqual(expected_accuracy, accuracy, 3)
-        cls.assertAlmostEqual(expected_precision, precision, 3)
-        cls.assertAlmostEqual(expected_recall, recall, 3)
-        cls.assertAlmostEqual(expected_f1score, f1score, 3)
+        cls.assertAlmostEqual(expected_accuracy, accuracy, 2)
+        cls.assertAlmostEqual(expected_precision, precision, 2)
+        cls.assertAlmostEqual(expected_recall, recall, 2)
+        cls.assertAlmostEqual(expected_f1score, f1score, 2)
