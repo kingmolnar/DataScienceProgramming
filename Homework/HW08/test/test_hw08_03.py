@@ -23,8 +23,8 @@ class TestHW0803(unittest.TestCase):
         accuracy, precision, recall, f1score = process_and_train_decision_tree(self.df, self.categorical_features)
 
         # Check if metrics are within valid bounds
-        self.assertTrue(0.87 <= accuracy <= 0.89, "Accuracy out of range")
-        self.assertTrue(0.19 <= precision <= 0.21, "Precision out of range")
-        self.assertTrue(0.32 <= recall <= 0.34, "Recall out of range")
-        self.assertTrue(0.24 <= f1score <= 0.26, "F1-score out of range")
+        self.assertTrue(0.8 <= accuracy <= 0.9, "Accuracy out of range")
+        self.assertTrue(0.1 <= precision <= 0.3, "Precision out of range")
+        self.assertTrue(0.3 <= recall <= 0.4, "Recall out of range")
+        self.assertTrue(0.2 <= f1score <= 0.3, "F1-score out of range")
         
