@@ -87,14 +87,12 @@ fi
 cat <<EOF | while read F; do if [ -f "$F" ]; then echo ".....SUBMIT '$F'"; cp -a $F "$DEST/"; else echo "!!! MISSING '$F' !!!"; fi; done
 solution_11_1.py
 solution_11_2.py
-solution_11_3.py
-solution_11_4.py
-solution_11_5.py
-solution_11_6.py
-solution_11_7.py
-solution_11_8.py
-solution_11_9.py
-solution_11_10.py
+EOF
+
+cat <<EOF | while read F; do if [ -f "$F" ]; then echo ".....SUBMIT '$F'"; cp -a $F "$DEST/"; else echo "!!! MISSING '$F' !!!"; fi; done
+ahc_clustering_average.png
+dbscan_blobs_and_rings.png
+comparison_of_clustering_techniques.png
 EOF
 
 echo
