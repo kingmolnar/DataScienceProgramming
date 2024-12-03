@@ -13,10 +13,7 @@ class TestKMeansClustering(unittest.TestCase):
     
     def test_kmeans_with_elbow_method(self):
         # Ensure the function runs without error and returns expected results
-        optimal_k, centroid = kmeans_with_elbow_method(self.X)
-
-        # Test optimal_k value
-        self.assertEqual(optimal_k, 5, "Optimal k is incorrect")
+        centroid = kmeans_with_elbow_method(self.X)
 
         # Test centroid values (Cluster 0 centroid rounded to 2 decimals)
         expected_centroid = [ 2.1,  4.1 ]  # Example: Adjust this based on actual centroid from testing
