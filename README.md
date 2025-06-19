@@ -1,4 +1,4 @@
-# Data Science Programming
+# Data Science Programming 
 
 This material has been developed for the course IFI 8410 in the [Master of Science in Analytics](https://robinson.gsu.edu/program/data-science-and-analytics-ms/)
  at the [J. Mack Robinson College of Business](http://robinson.gsu.edu) at [Georgia State University](http://gsu.edu).
